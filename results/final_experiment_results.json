@@ -1,0 +1,110 @@
+{
+  "experiment": {
+    "name": "Multi-LLM Collaborative Debate & Evaluation",
+    "benchmark_questions": 25,
+    "model": "gpt-4o-mini",
+    "solvers_per_question": 3,
+    "judges_per_question": 1
+  },
+
+  "system_comparison": {
+    "single_llm": {
+      "correct": 12,
+      "questions": 25,
+      "accuracy_percent": 48.0,
+      "calls": 25,
+      "input_tokens": 3207,
+      "output_tokens": 9272,
+      "total_tokens": 12479,
+      "latency_seconds_per_question": 3.24,
+      "estimated_cost_usd": 0.00604425
+    },
+
+    "majority_vote": {
+      "correct": 12,
+      "questions": 25,
+      "accuracy_percent": 48.0
+    },
+
+    "independent_solvers_judge": {
+      "correct": 13,
+      "questions": 25,
+      "accuracy_percent": 52.0,
+      "calls": 100,
+      "input_tokens": 49386,
+      "output_tokens": 34318,
+      "total_tokens": 83704,
+      "latency_seconds_per_question": 14.74,
+      "estimated_cost_usd": 0.0279987
+    },
+
+    "full_debate": {
+      "correct": 11,
+      "questions": 25,
+      "accuracy_percent": 44.0,
+      "calls": 325,
+      "input_tokens": 269545,
+      "output_tokens": 85762,
+      "total_tokens": 355307,
+      "latency_seconds_per_question": 35.55,
+      "estimated_cost_usd": 0.09188895
+    }
+  },
+
+  "solver_analysis": {
+    "initial_accuracy_percent": 45.33,
+    "initial_correct": 34,
+    "initial_total": 75,
+
+    "refined_accuracy_percent": 44.0,
+    "refined_correct": 33,
+    "refined_total": 75
+  },
+
+  "refinement_analysis": {
+    "improvement_rate_percent": 2.44,
+    "damage_rate_percent": 5.88,
+    "improved_cases": 1,
+    "damaged_cases": 2
+  },
+
+  "peer_review_analysis": {
+    "total_reviews": 150,
+    "correct_assessments": 115,
+    "incorrect_assessments": 21,
+    "partially_correct_assessments": 14,
+
+    "error_detection_rate_percent": 32.93,
+    "false_criticism_rate_percent": 11.76
+  },
+
+  "consensus_analysis": {
+    "consensus_rate_percent": 40.0,
+    "consensus_cases": 10,
+    "consensus_accuracy_percent": 90.0,
+    "correct_consensus_cases": 9
+  },
+
+  "judge_analysis": {
+    "independent_solvers_judge_accuracy_percent": 52.0,
+    "full_debate_judge_accuracy_percent": 44.0
+  },
+
+  "benchmark": {
+    "mathematics": 7,
+    "physics": 6,
+    "logic_constraint": 6,
+    "game_theory": 6,
+    "total": 25
+  },
+
+  "limitations": [
+    "The benchmark contains only 25 questions.",
+    "Only one underlying LLM model was used.",
+    "Results depend on prompt design.",
+    "Results depend on the selected benchmark.",
+    "Peer-review evaluation uses an answer-level operationalization.",
+    "Cost estimates depend on the pricing assumptions used.",
+    "Stage 0 role-assessment token usage was not included in the recorded cost totals."
+  ]
+}

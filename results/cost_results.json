@@ -1,0 +1,46 @@
+{
+    "model": "gpt-4o-mini",
+    "pricing": {
+        "input_usd_per_1m_tokens": 0.15,
+        "output_usd_per_1m_tokens": 0.60,
+        "note": "Estimated API cost from recorded input/output tokens. Cached-input pricing is not separately accounted for."
+    },
+    "systems": {
+        "single_llm": {
+            "input_tokens": 3207,
+            "output_tokens": 9272,
+            "total_tokens": 12479,
+            "correct": 12,
+            "questions": 25,
+            "accuracy_percent": 48.0,
+            "input_cost_usd": 0.00048105,
+            "output_cost_usd": 0.0055632,
+            "estimated_total_cost_usd": 0.00604425,
+            "estimated_cost_per_correct_answer_usd": 0.00050369
+        },
+        "independent_solvers_judge": {
+            "input_tokens": 49386,
+            "output_tokens": 34318,
+            "total_tokens": 83704,
+            "correct": 13,
+            "questions": 25,
+            "accuracy_percent": 52.0,
+            "input_cost_usd": 0.0074079,
+            "output_cost_usd": 0.0205908,
+            "estimated_total_cost_usd": 0.0279987,
+            "estimated_cost_per_correct_answer_usd": 0.00215375
+        },
+        "full_debate": {
+            "input_tokens": 269545,
+            "output_tokens": 85762,
+            "total_tokens": 355307,
+            "correct": 11,
+            "questions": 25,
+            "accuracy_percent": 44.0,
+            "input_cost_usd": 0.04043175,
+            "output_cost_usd": 0.0514572,
+            "estimated_total_cost_usd": 0.09188895,
+            "estimated_cost_per_correct_answer_usd": 0.00835354
+        }
+    }
+}

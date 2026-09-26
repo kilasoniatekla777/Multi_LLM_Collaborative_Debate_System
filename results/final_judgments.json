@@ -1,0 +1,377 @@
+[
+    {
+        "question_id": 1,
+        "question": "A sequence is defined by a_1 = 2 and a_(n+1) = 3a_n + 2 for n >= 1. Find a_8.",
+        "judge": {
+            "judge_id": "model_1",
+            "selected_solver": "model_3",
+            "final_answer": "6560",
+            "reasoning": "Model_3 provided consistently correct calculations from a_1 to a_8 using the provided recurrence relation. It was thoroughly reviewed and validated by peers, leading to confirmation of its accuracy with no identified errors. Models 2 and 4 also reached the same conclusion but had inconsistencies or required recalculations for verification, specifically model 4 which had noted calculation errors in its earlier submission. Therefore, model 3 is retained as the most reliable solution.",
+            "confidence": 1.0,
+            "latency_seconds": 2.06,
+            "input_tokens": 3285,
+            "output_tokens": 127,
+            "total_tokens": 3412
+        }
+    },
+    {
+        "question_id": 2,
+        "question": "How many 5-digit positive integers have five distinct digits and are divisible by 5?",
+        "judge": {
+            "judge_id": "model_3",
+            "selected_solver": "model_4",
+            "final_answer": "4704",
+            "reasoning": "Model 4 provides a correct solution that accurately calculates the total number of 5-digit positive integers with distinct digits that are divisible by 5. It correctly separates the problem into two cases based on whether the last digit is 0 or 5, and it properly evaluates the available digits while maintaining distinction, yielding the valid total of 4704. Other models, specifically models 1 and 2, arrive at incorrect answers due to miscalculations in the arrangements and selections of digits, particularly failing to correctly account for the restrictions imposed by already chosen digits. Model 1 originally yielded 5712, which was incorrect due to these critical errors. Model 2 also arrived at 5712 but failed to account for the distinct digit restrictions after selecting the first digit correctly. Model 4's calculations are supported by thorough peer reviews which confirmed its correctness.",
+            "confidence": 1.0,
+            "latency_seconds": 2.26,
+            "input_tokens": 5095,
+            "output_tokens": 207,
+            "total_tokens": 5302
+        }
+    },
+    {
+        "question_id": 3,
+        "question": "Let x be a nonzero real number satisfying x + 1/x = 3. Find x^5 + 1/x^5.",
+        "judge": {
+            "judge_id": "model_3",
+            "selected_solver": "model_1",
+            "final_answer": "123",
+            "reasoning": "Model 1 and Model 2 both arrive at the same final answer of 123, which is supported by their logical application of recursive relations and correct calculations throughout. The derivation of x^3 + 1/x^3 and all intermediary steps leading to x^5 + 1/x^5 have been consistently shown and are accurate. Model 4, while having strong reasoning in initial steps, ultimately produces an incorrect final answer of 144 due to an error in its identity application for calculating x^5 + 1/x^5. Therefore, Model 1 is selected for its clear and correct process that yields the intended result.",
+            "confidence": 0.9,
+            "latency_seconds": 1.83,
+            "input_tokens": 3574,
+            "output_tokens": 164,
+            "total_tokens": 3738
+        }
+    },
+    {
+        "question_id": 4,
+        "question": "How many ordered pairs of positive integers (a,b) satisfy 1/a + 1/b = 1/6?",
+        "judge": {
+            "judge_id": "model_4",
+            "selected_solver": "model_1",
+            "final_answer": "9",
+            "reasoning": "Model 1's solution is correct, as it provides a clear step-by-step derivation from the equation 1/a + 1/b = 1/6 to the factorization (a - 6)(b - 6) = 36. The reasoning identifies all positive integer pairs (x, y) whose product is 36 and correctly generates the ordered pairs (a, b) from these factors. Peer reviews consistently supported the correctness of this model's solution, and it was fair to count the distinct ordered pairs derived from the unique factor pairs. While Model 2 reached the wrong count (10 pairs) due to miscounting permutations, and Model 3 did not emphasize the counting of unique orders clearly, all reached a proper understanding of the mathematical steps. Ultimately, Model 1 offers the precise formulation needed and concludes with the correct answer of 9 distinct ordered pairs.",
+            "confidence": 1.0,
+            "latency_seconds": 2.3,
+            "input_tokens": 3864,
+            "output_tokens": 214,
+            "total_tokens": 4078
+        }
+    },
+    {
+        "question_id": 5,
+        "question": "Two fair six-sided dice are rolled. Given that their sum is at least 10, what is the probability that the sum is even?",
+        "judge": {
+            "judge_id": "model_1",
+            "selected_solver": "model_2",
+            "final_answer": "2/3",
+            "reasoning": "All three models (2, 3, and 4) arrived at the same conclusion, 2/3, with accurate reasoning and correct mathematics. They all correctly listed the outcomes for sums greater than or equal to 10 and identified the even sums among those outcomes. Model 2's solution was slightly clearer in structuring the reasoning but all three solutions provided valid calculations. Given that all solutions and peer reviews confirmed the correctness of the reasoning, I have selected model 2, although the final answer is consistent across all models.",
+            "confidence": 1.0,
+            "latency_seconds": 1.57,
+            "input_tokens": 3501,
+            "output_tokens": 144,
+            "total_tokens": 3645
+        }
+    },
+    {
+        "question_id": 6,
+        "question": "Find the remainder when 7^100 is divided by 13.",
+        "judge": {
+            "judge_id": "model_2",
+            "selected_solver": "model_1",
+            "final_answer": "9",
+            "reasoning": "All three models apply Fermat's Little Theorem correctly, leading to the conclusion that 7^100 is congruent to 7^4 modulo 13. The reasoning across all models is sound, with accurate calculations confirming that 7^4 is 9 modulo 13. Model 1's solution is chosen because it presents the rationale clearly and demonstrates the calculations explicitly. Models 3 and 4 also yield the same answer, but Model 1's explanation is slightly more straightforward. Model 4, while refined in clarity, does not present a significant advantage over Model 1, leading to its acceptance as well.",
+            "confidence": 1.0,
+            "latency_seconds": 1.77,
+            "input_tokens": 3159,
+            "output_tokens": 162,
+            "total_tokens": 3321
+        }
+    },
+    {
+        "question_id": 7,
+        "question": "A convex polygon has 90 diagonals. How many sides does it have?",
+        "judge": {
+            "judge_id": "model_4",
+            "selected_solver": "model_1",
+            "final_answer": "15",
+            "reasoning": "All three models correctly applied the formula for the number of diagonals in a polygon (D = n(n-3)/2) and derived the quadratic equation accurately. They all reached the same conclusion that the polygon has 15 sides, as they correctly solved for n using the quadratic formula. The peer reviews confirmed the correctness of the solutions, thus validating the reasoning and calculations provided by each model. Therefore, I selected model_1 for the final answer, which effectively clarified the steps taken to arrive at the solution.",
+            "confidence": 1.0,
+            "latency_seconds": 1.53,
+            "input_tokens": 2894,
+            "output_tokens": 138,
+            "total_tokens": 3032
+        }
+    },
+    {
+        "question_id": 8,
+        "question": "A 2 kg object starts from rest and is acted on by a constant net force of 6 N for 5 seconds. What are its final speed and the distance traveled?",
+        "judge": {
+            "judge_id": "model_2",
+            "selected_solver": "model_3",
+            "final_answer": "Final speed is 15 m/s, distance traveled is 37.5 m",
+            "reasoning": "Model 3 is selected for the final answer as it provided both the final speed and distance calculations with accurate reasoning based on Newton's second law and kinematic equations. The calculations for both values are consistently supported by established physics principles and were confirmed as correct by peer reviews. Models 1 and 4 also arrived at the same conclusion, but model 3's presentation was slightly more concise in addressing the calculations. All models correctly identified that the final speed is 15 m/s and the distance is 37.5 m, providing a robust demonstration of the relevant physics. The confidence level is set to 1.0, indicating complete certainty in the correctness of the solution.",
+            "confidence": 1.0,
+            "latency_seconds": 1.95,
+            "input_tokens": 3137,
+            "output_tokens": 185,
+            "total_tokens": 3322
+        }
+    },
+    {
+        "question_id": 9,
+        "question": "A projectile is launched horizontally from a height of 45 m with a horizontal speed of 20 m/s. Ignore air resistance and take g = 10 m/s^2. How far horizontally does it travel before hitting the ground?",
+        "judge": {
+            "judge_id": "model_4",
+            "selected_solver": "model_1",
+            "final_answer": "60 m",
+            "reasoning": "All three models presented the same underlying equations and reasoning to calculate the horizontal distance. They all correctly determined the time of flight to be 3 seconds using the kinematic equation for free fall based on the provided height and gravitational acceleration. Each model correctly applied the formula for horizontal distance (d = speed * time) to arrive at the distance of 60 meters. The peer reviews confirmed that all models were logically sound and correct in their calculations. However, model_1's reasoning was slightly more straightforward and clearly articulated. Therefore, it was selected for the final answer.",
+            "confidence": 1.0,
+            "latency_seconds": 1.53,
+            "input_tokens": 2470,
+            "output_tokens": 149,
+            "total_tokens": 2619
+        }
+    },
+    {
+        "question_id": 10,
+        "question": "A 4 ohm resistor and a 6 ohm resistor are connected in parallel to a 12 V ideal battery. What is the total current supplied by the battery?",
+        "judge": {
+            "judge_id": "model_2",
+            "selected_solver": "model_1",
+            "final_answer": "5 A",
+            "reasoning": "All models provided the same correct answer of 5 A, supported by correct calculations for equivalent resistance and the application of Ohm's Law. Model_1, 3, and 4 all followed the correct reasoning and formulas to arrive at this conclusion. The reasoning was consistent across all submissions, with well-structured calculations and no errors noted in peer reviews. Hence, the selection of model_1 is based on its clear presentation and confirmed correctness, though all models are equally valid.",
+            "confidence": 1.0,
+            "latency_seconds": 1.54,
+            "input_tokens": 2718,
+            "output_tokens": 133,
+            "total_tokens": 2851
+        }
+    },
+    {
+        "question_id": 11,
+        "question": "A 0.5 kg block slides from rest down a frictionless track from a height of 5 m. Take g = 10 m/s^2. What is its speed at the bottom?",
+        "judge": {
+            "judge_id": "model_4",
+            "selected_solver": "model_1",
+            "final_answer": "10 m/s",
+            "reasoning": "All three models correctly applied the conservation of energy principle, accurately calculating the potential and kinetic energies to arrive at the same final answer of 10 m/s. The detailed steps in each model followed the laws of physics appropriately, with no errors identified in their reasoning or calculations. Hence, each solution is valid; however, model_1 is selected based on its clarity and thoroughness in presenting the calculations. The peer reviews corroborated the correctness and structure of all models.",
+            "confidence": 1.0,
+            "latency_seconds": 1.74,
+            "input_tokens": 2773,
+            "output_tokens": 130,
+            "total_tokens": 2903
+        }
+    },
+    {
+        "question_id": 12,
+        "question": "A gas occupies 2 L at 300 K at constant pressure. If its temperature increases to 450 K, what volume will it occupy?",
+        "judge": {
+            "judge_id": "model_4",
+            "selected_solver": "model_1",
+            "final_answer": "3 L",
+            "reasoning": "All models correctly applied Charles's Law (V1/T1 = V2/T2) to determine the final volume of the gas after the temperature increase. Each solver used the correct initial volume (2 L), initial temperature (300 K), and final temperature (450 K). The calculations clearly led to the result of 3 L for the volume. The peer reviews confirmed the correctness of the reasoning and calculations in all models, indicating that there were no errors or weaknesses in their methodologies. Since all answers converged to the same result, the solution from model_1 is selected for being the most clearly articulated with explicit steps. No solutions were rejected as they were all valid.",
+            "confidence": 1.0,
+            "latency_seconds": 1.95,
+            "input_tokens": 2368,
+            "output_tokens": 171,
+            "total_tokens": 2539
+        }
+    },
+    {
+        "question_id": 13,
+        "question": "A photon has wavelength 600 nm. Using h = 6.626e-34 J*s and c = 3.00e8 m/s, calculate its energy in joules.",
+        "judge": {
+            "judge_id": "model_2",
+            "selected_solver": "model_1",
+            "final_answer": "3.313e-19 J",
+            "reasoning": "Model 1, Model 3, and Model 4 all correctly use formulas to calculate the energy of a photon. However, Models 1 and 4 arrive at the same final answer of 3.313e-19 J, while Model 3 presents a slightly less precise value of 3.31e-19 J due to rounding. The reasoning in Model 1 is clear, directly applying the formula E = hc/λ and performing the necessary steps and calculations correctly. The peer reviews validated the accuracy of Model 1 and acknowledged no weaknesses or errors. Thus, the answer from Model 1 is not only correct but also presented with clarity and precision. Consequently, Model 1's answer is selected as the final answer.",
+            "confidence": 1.0,
+            "latency_seconds": 2.05,
+            "input_tokens": 2390,
+            "output_tokens": 190,
+            "total_tokens": 2580
+        }
+    },
+    {
+        "question_id": 14,
+        "question": "Five people A, B, C, D, and E stand in a line. A is somewhere to the left of B. C is immediately to the right of D. E is not at either end. If D is in position 2, what is the complete order?",
+        "judge": {
+            "judge_id": "model_1",
+            "selected_solver": "model_2",
+            "final_answer": "A, D, C, E, B",
+            "reasoning": "Model 2 provides the most accurate reasoning for the arrangement of the people based on the conditions given in the problem. It correctly identifies the positions of D and C, places E in a valid middle position, and correctly places A to the left of B, resulting in the final order A, D, C, E, B. The other models either mistakenly allow E to be positioned incorrectly or failed to reconsider the constraints adequately after peer reviews. Models 3 and 4 presented errors regarding the placement of E and the arrangements of A and B, despite some initial logical reasoning.",
+            "confidence": 1.0,
+            "latency_seconds": 1.94,
+            "input_tokens": 2882,
+            "output_tokens": 158,
+            "total_tokens": 3040
+        }
+    },
+    {
+        "question_id": 15,
+        "question": "Four people A, B, C, and D each own exactly one of four pets: cat, dog, fish, or bird. A does not own the cat or dog. B owns neither the bird nor fish. C does not own the dog. D owns the fish. What pet does each person own?",
+        "judge": {
+            "judge_id": "model_1",
+            "selected_solver": "model_3",
+            "final_answer": "{'A': 'bird', 'B': 'dog', 'C': 'cat', 'D': 'fish'}",
+            "reasoning": "Model 3 produced a logically consistent solution that adhered strictly to all the problem constraints. It correctly identified that A cannot own the cat or dog, thus leaving the bird as A's pet. It also acknowledged that B cannot own the bird or fish, leaving only the cat or dog; however, since C cannot own the dog, B must own the dog, and consequently, C owns the remaining option, which is the cat. The other models had inconsistencies in their deductions, particularly models 2 and 4, which erroneously assigned C the dog and reached conflicting conclusions. Model 4 was partially correct, but it ultimately arrived at contradictions due to misassignments. Thus, the model 3 solution is the best supported.",
+            "confidence": 1.0,
+            "latency_seconds": 1.71,
+            "input_tokens": 3441,
+            "output_tokens": 205,
+            "total_tokens": 3646
+        }
+    },
+    {
+        "question_id": 16,
+        "question": "There are exactly three boxes: red, blue, and green. Exactly one contains gold. The labels are all wrong. The red box says 'gold is in the red box', the blue box says 'gold is in the red box', and the green box says 'gold is not in the blue box'. Which box contains the gold?",
+        "judge": {
+            "judge_id": "model_1",
+            "selected_solver": "model_4",
+            "final_answer": "green",
+            "reasoning": "The reasoning in model_4 correctly identifies that all labels are wrong. It logically eliminates the red and blue boxes based on their incorrect statements, ultimately concluding that the gold must be in the green box. This deduction follows a clear and valid line of reasoning. Model_2 and model_3 initially reached the correct conclusion about the gold being in the green box but faced contradictions in their reasoning upon peer review. Model_3's refined solution incorrectly concluded that the gold was in the red box, despite the previous indications that it couldn't be. Thus, model_4's solution stands as the most coherent and supported answer.",
+            "confidence": 1.0,
+            "latency_seconds": 1.69,
+            "input_tokens": 2313,
+            "output_tokens": 158,
+            "total_tokens": 2471
+        }
+    },
+    {
+        "question_id": 17,
+        "question": "Six books A, B, C, D, E, and F are arranged on a shelf. A must be before D. B must be immediately before C. E must be after D. F cannot be first. If B is in position 3, what is the only possible order?",
+        "judge": {
+            "judge_id": "model_1",
+            "selected_solver": "model_3",
+            "final_answer": "A F B C D E",
+            "reasoning": "Model 3's solution accurately follows all the constraints provided in the problem. It correctly identifies the positions of B (3) and C (4) based on their immediate relationship. It then systematically places A before D and ensures E is positioned after D. This final arrangement meets all conditions without any violations. Model 2, on the other hand, suggested an arrangement that incorrectly placed E before D, violating the conditions. Model 4's solution also incorrectly positioned E before D and did not respect the necessary order of placement. Hence, model 3's answer is the only valid arrangement.",
+            "confidence": 1.0,
+            "latency_seconds": 1.72,
+            "input_tokens": 3667,
+            "output_tokens": 158,
+            "total_tokens": 3825
+        }
+    },
+    {
+        "question_id": 18,
+        "question": "Exactly one of four statements is true: (1) A is true, (2) B is true, (3) A and B are both true, (4) A and B are both false. Which pair of truth values for A and B satisfies this condition?",
+        "judge": {
+            "judge_id": "model_3",
+            "selected_solver": "model_1",
+            "final_answer": "A is false, B is false",
+            "reasoning": "Model 1 provided the correct analysis indicating that if both statements A and B are false, then statement 4 ('A and B are both false') is the only statement that holds true. The other models presented incorrect solutions by suggesting that there could be multiple valid combinations or by not clearly adhering to the requirement of exclusivity of truth statements.\n\nModel 2 incorrectly suggested both (true, false) and (false, true) as valid solutions, failing to recognize that only one statement can be true at any given time. Model 4 provided the same true final answer as model 1, but model 1 offered a more detailed breakdown of the conditions leading to that conclusion. Thus, model 1 is selected as it correctly meets the problem's stipulation with the highest confidence.",
+            "confidence": 1.0,
+            "latency_seconds": 2.05,
+            "input_tokens": 3649,
+            "output_tokens": 199,
+            "total_tokens": 3848
+        }
+    },
+    {
+        "question_id": 19,
+        "question": "A code consists of three distinct digits chosen from 1, 2, 3, 4, and 5. The first digit is smaller than the second, and the second digit is smaller than the third. How many valid codes are possible?",
+        "judge": {
+            "judge_id": "model_2",
+            "selected_solver": "model_1",
+            "final_answer": "10",
+            "reasoning": "All three models correctly identified that the problem involves selecting 3 distinct digits from the set {1, 2, 3, 4, 5}, and each arrived at the same correct answer of 10 using the combinations formula. Each model's reasoning effectively explained the selection and ordering conditions dictated by the problem. There is no basis for rejection of any model as they all provided accurate, valid explanations leading to the same conclusion.",
+            "confidence": 1.0,
+            "latency_seconds": 1.53,
+            "input_tokens": 2595,
+            "output_tokens": 122,
+            "total_tokens": 2717
+        }
+    },
+    {
+        "question_id": 20,
+        "question": "Consider the Prisoner's Dilemma with payoffs (3,3) for mutual cooperation, (0,5) if player 1 cooperates and player 2 defects, (5,0) if player 1 defects and player 2 cooperates, and (1,1) for mutual defection. What is the unique pure-strategy Nash equilibrium?",
+        "judge": {
+            "judge_id": "model_3",
+            "selected_solver": "model_1",
+            "final_answer": "(Defect, Defect)",
+            "reasoning": "All three models reached the same conclusion, that the unique pure-strategy Nash equilibrium of the Prisoner's Dilemma is (Defect, Defect), supported by thorough analysis of the payoffs for each player's decision-making. Model 1 provided a clear explanation of the dominant strategies for both players, showing that defection is preferred in both scenarios (cooperation from the other player or defection). Models 2 and 4 also provided correct conclusions, but the structure and reasoning in Model 1 were particularly clear and detailed. Therefore, I select Model 1's refined solution as it provides the best articulation of the reasoning leading to the correct answer.",
+            "confidence": 1.0,
+            "latency_seconds": 1.95,
+            "input_tokens": 2950,
+            "output_tokens": 170,
+            "total_tokens": 3120
+        }
+    },
+    {
+        "question_id": 21,
+        "question": "In a zero-sum game, the row player's payoff matrix is [[2, -1], [-2, 3]]. Does the game have a pure-strategy saddle point? If so, give the saddle point and game value.",
+        "judge": {
+            "judge_id": "model_1",
+            "selected_solver": "model_4",
+            "final_answer": "Yes, the saddle point is at (1,1) with a game value of 2.",
+            "reasoning": "Model 4 correctly identifies the saddle point at (1,1) in the payoff matrix [[2, -1], [-2, 3]]. It analyzes both row maximums and column minimums accurately, concluding that 2 is the maximum of Row 1 and the minimum of Column 1. This satisfies the definition of a saddle point. While models 2 and 3 and their refined versions concluded that there is no saddle point, they failed to correctly evaluate the conditions in the matrix and overlooked the saddle point at (1,1). The comprehensive evaluation of all cells in model 4 ultimately supports that a pure-strategy saddle point does exist, confirming this model's superiority and correctness.",
+            "confidence": 0.9,
+            "latency_seconds": 1.87,
+            "input_tokens": 4315,
+            "output_tokens": 191,
+            "total_tokens": 4506
+        }
+    },
+    {
+        "question_id": 22,
+        "question": "Two players simultaneously choose Left or Right. Player 1's payoff is 2 if their choices match and 0 otherwise. Player 2's payoff is 1 if their choices match and 0 otherwise. What are the pure-strategy Nash equilibria?",
+        "judge": {
+            "judge_id": "model_2",
+            "selected_solver": "model_1",
+            "final_answer": "The pure-strategy Nash equilibria are (L, L) and (R, R).",
+            "reasoning": "Model 1's analysis is clear, logical, and thorough in identifying the Nash equilibria. It accurately constructs the payoff matrix and correctly evaluates each strategy pair, concluding that both (L, L) and (R, R) are points where neither player has an incentive to deviate unilaterally. Models 3 and 4 also provide correct reasoning and arrive at the same conclusion; however, model 1 presents its reasoning in a straightforward format that aligns closely with the definitions and requirements for identifying Nash equilibria. Therefore, it is selected as the best-supported answer.",
+            "confidence": 1.0,
+            "latency_seconds": 1.91,
+            "input_tokens": 4187,
+            "output_tokens": 169,
+            "total_tokens": 4356
+        }
+    },
+    {
+        "question_id": 23,
+        "question": "In the matching-pennies zero-sum game, Player 1 wins 1 if the two choices match and loses 1 otherwise. Player 2 receives the opposite payoff. What is the mixed-strategy Nash equilibrium?",
+        "judge": {
+            "judge_id": "model_1",
+            "selected_solver": "model_3",
+            "final_answer": "(1/2, 1/2)",
+            "reasoning": "All solvers accurately identify the mixed-strategy Nash equilibrium for the matching-pennies game, which occurs when both players randomize their choices equally. Models 2, 3, and 4 all successfully derive the correct probabilities leading to (1/2, 1/2). The final answer from model 3 is presented in a standard mathematical format, which is somewhat clearer than model 2's notation or model 4's verbose explanation. Although model 4 is thorough, its final presentation could be seen as less concise. Thus, the final answer from model 3 is selected for clarity.",
+            "confidence": 1.0,
+            "latency_seconds": 2.7,
+            "input_tokens": 4172,
+            "output_tokens": 164,
+            "total_tokens": 4336
+        }
+    },
+    {
+        "question_id": 24,
+        "question": "Consider the payoff matrix for a zero-sum game: [[4, 0], [2, 3]]. Player 1 maximizes the payoff and Player 2 minimizes it. What is the value of the game if both players may use mixed strategies?",
+        "judge": {
+            "judge_id": "model_2",
+            "selected_solver": "model_1",
+            "final_answer": "2",
+            "reasoning": "Model 1 correctly identifies the structure of the problem and accurately derives the expected payoffs based on mixed strategies for both players. It simplifies the calculations effectively and reaches a value of 2. While Models 3 and 4 received peer critiques due to critical errors in their derivations and assumptions towards the game's value, leading to significantly incorrect outputs, Model 1's refined answer aligns with valid calculations and consistent logical steps throughout. Therefore, its conclusion of the game's value is the most reliable.",
+            "confidence": 1.0,
+            "latency_seconds": 1.5,
+            "input_tokens": 5774,
+            "output_tokens": 133,
+            "total_tokens": 5907
+        }
+    },
+    {
+        "question_id": 25,
+        "question": "Two firms simultaneously choose High Price or Low Price. Their payoffs are: (High, High)=(4,4), (High, Low)=(1,6), (Low, High)=(6,1), and (Low, Low)=(2,2). What is the unique pure-strategy Nash equilibrium?",
+        "judge": {
+            "judge_id": "model_1",
+            "selected_solver": "model_4",
+            "final_answer": "(High, High)",
+            "reasoning": "Model 4 provides a thorough and logical analysis of both firms' strategies and accurately identifies the best responses based on the payoffs. It correctly determines that the unique pure-strategy Nash equilibrium is (High, High). The other models, specifically Model 2 and Model 3, incorrectly identified (Low, Low) and were initially flawed in evaluating the firms' best responses, ignoring that (High, High) is a viable equilibrium. Model 3 revised its approach but ended up concluding that there are two equilibria without dismissing the (High, High) as the best response scenario, leading to ambiguity. Model 4, however, clearly illustrates that both firms maximizing their payoffs lead to (High, High) as the only stable outcome.",
+            "confidence": 1.0,
+            "latency_seconds": 1.95,
+            "input_tokens": 4600,
+            "output_tokens": 187,
+            "total_tokens": 4787
+        }
+    }
+]

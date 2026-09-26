@@ -1,0 +1,652 @@
+[
+    {
+        "question_id": 1,
+        "question": "A sequence is defined by a_1 = 2 and a_(n+1) = 3a_n + 2 for n >= 1. Find a_8.",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I have a strong understanding of the recursive sequence and can independently calculate the required term, but I may not have the same level of confidence in evaluating alternative solutions.\"\n}",
+                "latency_seconds": 1.89
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I am confident in my ability to independently solve recursive sequences, but I also see value in evaluating the correctness of multiple solutions.\"\n}",
+                "latency_seconds": 1.38
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.2\n    },\n    \"reason\": \"I have the capability to independently solve recursive sequences, but evaluating multiple proposed solutions may require more context than I have.\"\n}",
+                "latency_seconds": 1.72
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I feel confident in my ability to derive the solution for the given recursive sequence, but I also recognize the need for careful evaluation of any proposed solutions from others.\"\n}",
+                "latency_seconds": 2.48
+            }
+        ]
+    },
+    {
+        "question_id": 2,
+        "question": "How many 5-digit positive integers have five distinct digits and are divisible by 5?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have a good understanding of combinatorial problems and can independently solve this, but I also recognize the value of evaluating multiple approaches.\"\n}",
+                "latency_seconds": 3.13
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I feel confident in solving the combinatorial aspects of the problem, but evaluating multiple solutions requires less certainty.\"\n}",
+                "latency_seconds": 1.25
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.3,\n        \"Judge\": 0.7\n    },\n    \"reason\": \"I feel more confident in evaluating multiple proposed solutions due to the combinatorial nature of the problem, which may lead to different valid approaches.\"\n}",
+                "latency_seconds": 1.56
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I believe I would be more effective as a Judge because evaluating multiple solutions for this combinatorial problem requires careful consideration of various counting methods and adherence to constraints, which is better suited for my reasoning capabilities.\"\n}",
+                "latency_seconds": 1.32
+            }
+        ]
+    },
+    {
+        "question_id": 3,
+        "question": "Let x be a nonzero real number satisfying x + 1/x = 3. Find x^5 + 1/x^5.",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.2\n    },\n    \"reason\": \"I can effectively derive and manipulate the equation to find the value of x and subsequently compute x^5 + 1/x^5, making me more suited as a Solver.\"\n}",
+                "latency_seconds": 1.36
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I feel confident in solving the problem through algebraic manipulation, but judging multiple solutions requires assessing correctness and clarity, which is slightly less certain.\"\n}",
+                "latency_seconds": 3.3
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.7\n    },\n    \"reason\": \"I believe I can independently solve the problem with a strong understanding of algebraic manipulations, but I also recognize the importance of evaluating multiple solutions in a collaborative context.\"\n}",
+                "latency_seconds": 1.7
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I feel confident in solving the problem as it involves algebraic manipulation and straightforward calculation steps. However, I also recognize that evaluating different approaches could provide valuable insights, which is why I have some confidence in the Judge role as well.\"\n}",
+                "latency_seconds": 2.15
+            }
+        ]
+    },
+    {
+        "question_id": 4,
+        "question": "How many ordered pairs of positive integers (a,b) satisfy 1/a + 1/b = 1/6?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I believe I can independently solve the problem as it involves straightforward algebraic manipulation and reasoning about ordered pairs. However, evaluating multiple solutions may also be valuable, though I feel less confident in that role.\"\n}",
+                "latency_seconds": 2.84
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.2\n    },\n    \"reason\": \"I feel confident in my ability to independently solve the problem due to my understanding of algebraic equations and integer solutions, but I also recognize the importance of evaluating multiple solutions, hence a lower confidence for the Judge role.\"\n}",
+                "latency_seconds": 1.95
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I feel confident in independently solving the mathematical equation and providing a detailed reasoning process, but I also recognize the importance of evaluating multiple solutions, which reduces my confidence in taking on the Judge role.\"\n}",
+                "latency_seconds": 1.66
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n   },\n    \"reason\": \"I feel confident in solving the mathematical equation to find ordered pairs of integers, but evaluating multiple proposed solutions might require more context.\"\n}",
+                "latency_seconds": 2.47
+            }
+        ]
+    },
+    {
+        "question_id": 5,
+        "question": "Two fair six-sided dice are rolled. Given that their sum is at least 10, what is the probability that the sum is even?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.3,\n        \"Judge\": 0.7\n    },\n    \"reason\": \"I am better suited for the Judge role as I can evaluate multiple proposed solutions and their reasoning regarding probability concepts, which can be complex.\"\n}",
+                "latency_seconds": 1.83
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I am more suited to evaluate potential solutions due to the need for careful assessment of probabilities and conditions, rather than solving the problem directly.\"\n}",
+                "latency_seconds": 1.37
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n   },\n    \"reason\": \"The problem involves evaluating multiple possible outcomes and understanding probability, which is better suited for the Judge role in this collaborative reasoning context.\"\n}",
+                "latency_seconds": 1.71
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I believe I am better suited as a Judge because evaluating multiple proposed solutions to determine correctness requires more critical assessment, while the problem itself involves probability calculations that could be challenging without further reasoning.\"\n}",
+                "latency_seconds": 1.55
+            }
+        ]
+    },
+    {
+        "question_id": 6,
+        "question": "Find the remainder when 7^100 is divided by 13.",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have a strong understanding of number theory and modular arithmetic, which makes me well-suited to independently solve this problem. However, evaluating multiple solutions could also be beneficial, hence the lower confidence for that role.\"\n}",
+                "latency_seconds": 1.83
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I believe I can independently solve the problem using modular arithmetic, but I also have the capability to evaluate solutions if presented.\"\n}",
+                "latency_seconds": 1.84
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I have a strong understanding of modular arithmetic and can independently solve the problem, but I also recognize the value of evaluating multiple approaches.\"\n}",
+                "latency_seconds": 2.19
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I have a strong understanding of modular arithmetic and can efficiently solve problems involving powers and remainders, but I also recognize the importance of evaluating different approaches to determine the best solution.\"\n}",
+                "latency_seconds": 1.36
+            }
+        ]
+    },
+    {
+        "question_id": 7,
+        "question": "A convex polygon has 90 diagonals. How many sides does it have?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.2\n    },\n    \"reason\": \"I can independently use the formula for the number of diagonals in a polygon to solve this problem accurately.\"\n}",
+                "latency_seconds": 2.92
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.5\n    },\n    \"reason\": \"I am confident in applying mathematical formulas to solve for the number of sides of a polygon given the number of diagonals, but I also recognize the need for evaluation of different approaches or solutions.\"\n}",
+                "latency_seconds": 1.84
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.2\n    },\n    \"reason\": \"I can independently apply the formula for the number of diagonals in a polygon to find the number of sides, but evaluating multiple solutions could also be important.\"\n}",
+                "latency_seconds": 2.05
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I am confident in solving mathematical problems involving polygons and their properties, but I can also evaluate other solutions effectively.\"\n}",
+                "latency_seconds": 1.62
+            }
+        ]
+    },
+    {
+        "question_id": 8,
+        "question": "A 2 kg object starts from rest and is acted on by a constant net force of 6 N for 5 seconds. What are its final speed and the distance traveled?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I am confident in my ability to independently solve the physics problem using principles of motion and force, but I also recognize the value in evaluating solutions from others.\"\n}",
+                "latency_seconds": 2.06
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.7\n    },\n    \"reason\": \"I have a strong understanding of physics concepts and can apply them to solve the problem, but evaluating multiple solutions requires careful consideration of each approach.\"\n}",
+                "latency_seconds": 1.47
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.5\n    },\n    \"reason\": \"I feel confident in my ability to solve the physics problem using appropriate equations of motion, but I also recognize the need for evaluation in case of multiple solutions.\"\n}",
+                "latency_seconds": 1.48
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I can independently apply physics principles to solve the problem, but I also recognize the value of evaluating multiple approaches to ensure the solution is robust.\"\n}",
+                "latency_seconds": 1.61
+            }
+        ]
+    },
+    {
+        "question_id": 9,
+        "question": "A projectile is launched horizontally from a height of 45 m with a horizontal speed of 20 m/s. Ignore air resistance and take g = 10 m/s^2. How far horizontally does it travel before hitting the ground?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I feel confident in solving the projectile motion problem due to my understanding of the physics involved, but I also have the capability to evaluate solutions effectively.\"\n}",
+                "latency_seconds": 1.41
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I have a strong understanding of projectile motion and can independently solve the problem, but assessing multiple solutions may require additional context.\"\n}",
+                "latency_seconds": 1.66
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I am confident in my ability to solve the physics problem given the defined parameters and equations of motion. However, I also have the capability to evaluate solutions, which gives me some confidence in the Judge role as well.\"\n}",
+                "latency_seconds": 2.24
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.7\n    },\n    \"reason\": \"I feel confident in solving the projectile motion problem due to my understanding of the physics involved, but I also recognize the importance of evaluating different approaches and solutions.\"\n}",
+                "latency_seconds": 1.42
+            }
+        ]
+    },
+    {
+        "question_id": 10,
+        "question": "A 4 ohm resistor and a 6 ohm resistor are connected in parallel to a 12 V ideal battery. What is the total current supplied by the battery?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have a good understanding of electrical circuits and can independently solve the problem, but I also recognize the value in evaluating multiple approaches to ensure accuracy.\"\n}",
+                "latency_seconds": 1.48
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I have sufficient knowledge to evaluate multiple proposed solutions effectively, which is crucial in this scenario. However, I can also solve the problem, but I believe my judgment skills are stronger in this case.\"\n}",
+                "latency_seconds": 1.46
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I feel confident in solving the problem due to my understanding of electrical circuits and parallel resistor calculations, but I can also evaluate others' solutions effectively.\"\n}",
+                "latency_seconds": 1.48
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have a strong understanding of electrical circuits and can independently analyze the problem to find the total current. However, evaluating multiple proposed solutions may require collaboration, which I am less confident in.\"\n}",
+                "latency_seconds": 1.42
+            }
+        ]
+    },
+    {
+        "question_id": 11,
+        "question": "A 0.5 kg block slides from rest down a frictionless track from a height of 5 m. Take g = 10 m/s^2. What is its speed at the bottom?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I feel confident in solving the physics problem using principles of energy conservation, but I can also evaluate solutions if needed.\"\n}",
+                "latency_seconds": 1.31
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.2\n    },\n    \"reason\": \"I am confident in my ability to solve the problem using principles of physics, specifically conservation of energy, but I can also evaluate others' reasoning.\"\n}",
+                "latency_seconds": 1.62
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.2\n    },\n    \"reason\": \"I have the ability to solve physics problems involving energy conservation and kinematics, but I could also evaluate proposed solutions from others.\"\n}",
+                "latency_seconds": 1.53
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I can independently apply principles of physics to calculate the speed of the block, but evaluating other solutions requires some additional context.\"\n}",
+                "latency_seconds": 1.6
+            }
+        ]
+    },
+    {
+        "question_id": 12,
+        "question": "A gas occupies 2 L at 300 K at constant pressure. If its temperature increases to 450 K, what volume will it occupy?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I have a strong understanding of the ideal gas law and can solve for the new volume given the temperature change, but I also have the ability to evaluate proposed solutions if needed.\"\n}",
+                "latency_seconds": 1.56
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I have a strong understanding of gas laws, particularly Charles's Law, which will allow me to effectively solve this problem. However, I can also evaluate solutions from others, which gives me some confidence in the Judge role as well.\"\n}",
+                "latency_seconds": 2.06
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I have a strong understanding of gas laws, particularly Charles's Law, which applies here. However, evaluating multiple solutions may require more context.\"\n}",
+                "latency_seconds": 1.57
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.9,\n        \"Judge\": 0.7\n    },\n    \"reason\": \"I feel confident in solving the problem due to familiarity with the gas laws, particularly Charles's Law, which relates volume and temperature. However, I also recognize the importance of evaluating multiple solutions, hence a moderate confidence in the judging role.\"\n}",
+                "latency_seconds": 2.11
+            }
+        ]
+    },
+    {
+        "question_id": 13,
+        "question": "A photon has wavelength 600 nm. Using h = 6.626e-34 J*s and c = 3.00e8 m/s, calculate its energy in joules.",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I feel confident in solving the problem due to familiarity with the physics involved in calculating photon energy from wavelength, but I also recognize the need for evaluation if multiple solutions are presented.\"\n}",
+                "latency_seconds": 1.66
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I have a strong understanding of the physics and mathematics involved in calculating the energy of a photon, which makes me well-suited for solving this problem. However, I also have some capacity to evaluate solutions as a Judge.\"\n}",
+                "latency_seconds": 2.03
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I am confident in my ability to independently solve the problem using the given formulas and constants, but I also have some capability to evaluate solutions from others.\"\n}",
+                "latency_seconds": 2.45
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I am confident in my ability to solve the problem as it involves straightforward calculations using well-known formulas. However, I also have the capacity to evaluate the solutions provided by others, albeit with slightly less confidence.\"\n}",
+                "latency_seconds": 1.54
+            }
+        ]
+    },
+    {
+        "question_id": 14,
+        "question": "Five people A, B, C, D, and E stand in a line. A is somewhere to the left of B. C is immediately to the right of D. E is not at either end. If D is in position 2, what is the complete order?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.7\n    },\n    \"reason\": \"I am confident in my ability to solve the problem due to my understanding of the conditions provided, but I also recognize the importance of evaluating different solutions as a Judge.\"\n}",
+                "latency_seconds": 1.76
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have a good understanding of logical reasoning and can work through the constraints to find a solution, but evaluating multiple proposed solutions may require more context.\"\n}",
+                "latency_seconds": 1.92
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I feel confident in solving the problem due to the clear logical relationships provided, but I also have the ability to evaluate potential solutions as a judge.\"\n}",
+                "latency_seconds": 1.85
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.5\n    },\n    \"reason\": \"I have a strong understanding of logical reasoning and spatial arrangements, making me confident in solving the problem. However, evaluating multiple solutions requires a level of precision in discerning nuances, which I am less confident about.\"\n}",
+                "latency_seconds": 1.4
+            }
+        ]
+    },
+    {
+        "question_id": 15,
+        "question": "Four people A, B, C, and D each own exactly one of four pets: cat, dog, fish, or bird. A does not own the cat or dog. B owns neither the bird nor fish. C does not own the dog. D owns the fish. What pet does each person own?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.8\n    },\n    \"reason\": \"I am better suited for the Judge role because I can evaluate the constraints and reasoning of multiple proposed solutions effectively, given the combinatorial nature of the problem.\"\n}",
+                "latency_seconds": 1.36
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I am confident in my ability to logically deduce the ownership of pets given the clues, but judging multiple solutions would require evaluating reasoning that may vary in completeness and accuracy.\"\n}",
+                "latency_seconds": 1.73
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have a good understanding of logic puzzles and can deduce the relationships between the people and their pets, making me more suited to solve the problem. However, I can also evaluate solutions effectively, albeit with less confidence.\"\n}",
+                "latency_seconds": 1.53
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have strong reasoning capabilities to deduce the ownership of pets based on the given constraints, but I also recognize the importance of evaluating multiple potential solutions collaboratively.\"\n}",
+                "latency_seconds": 1.45
+            }
+        ]
+    },
+    {
+        "question_id": 16,
+        "question": "There are exactly three boxes: red, blue, and green. Exactly one contains gold. The labels are all wrong. The red box says 'gold is in the red box', the blue box says 'gold is in the red box', and the green box says 'gold is not in the blue box'. Which box contains the gold?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.5,\n        \"Judge\": 0.8\n    },\n    \"reason\": \"I am more confident in evaluating solutions to the problem rather than independently solving it, as the reasoning involves deducing the incorrect labels, which requires careful consideration of multiple perspectives.\"\n}",
+                "latency_seconds": 1.74
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.2\n    },\n    \"reason\": \"I have a strong ability to reason through logical puzzles and determine the correct answer, but evaluating multiple solutions may be less effective without additional context.\"\n}",
+                "latency_seconds": 1.72
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.2\n    },\n    \"reason\": \"I feel confident in solving logical puzzles and can provide a detailed reasoning for the solution. However, I also recognize that judging multiple solutions can be valuable, though I am less confident in that role.\"\n}",
+                "latency_seconds": 1.98
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I feel confident in my ability to solve the logical reasoning puzzle based on the information given, but I also have the capability to evaluate solutions proposed by others.\"\n}",
+                "latency_seconds": 2.14
+            }
+        ]
+    },
+    {
+        "question_id": 17,
+        "question": "Six books A, B, C, D, E, and F are arranged on a shelf. A must be before D. B must be immediately before C. E must be after D. F cannot be first. If B is in position 3, what is the only possible order?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I am more suited to evaluate the proposed solutions due to the complexity of the constraints and the need for careful analysis of multiple arrangements.\"\n}",
+                "latency_seconds": 1.71
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.9,\n        \"Judge\": 0.7\n    },\n    \"reason\": \"I have a strong understanding of combinatorial arrangements and constraints, making me well-suited for solving this problem. However, my confidence in evaluating multiple solutions is also high, though slightly lower.\"\n}",
+                "latency_seconds": 2.27
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.5\n    },\n    \"reason\": \"I feel confident in solving the problem as it involves logical reasoning and constraints. However, evaluating proposed solutions is also feasible, but I have slightly less confidence in that role.\"\n}",
+                "latency_seconds": 1.47
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I feel confident in solving the problem due to my ability to reason through constraints and arrangements. However, I also recognize the importance of evaluating multiple solutions, which gives me some confidence in the Judge role as well.\"\n}",
+                "latency_seconds": 3.51
+            }
+        ]
+    },
+    {
+        "question_id": 18,
+        "question": "Exactly one of four statements is true: (1) A is true, (2) B is true, (3) A and B are both true, (4) A and B are both false. Which pair of truth values for A and B satisfies this condition?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"The problem involves evaluating logical statements and their relationships, which requires careful consideration of multiple potential solutions, making the Judge role more suitable.\"\n}",
+                "latency_seconds": 1.76
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"The problem requires evaluating multiple logical statements and understanding their interactions, which is more suited for the Judge role.\"\n}",
+                "latency_seconds": 3.19
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.8\n    },\n    \"reason\": \"The problem involves evaluating multiple statements and determining the truth values, which is more suited to a judging role where I can assess the proposed solutions for correctness.\"\n}",
+                "latency_seconds": 1.46
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.8\n   },\n    \"reason\": \"The problem requires evaluating multiple statements for consistency, which is better suited for a judging role to determine the correct truth values.\"\n}",
+                "latency_seconds": 1.38
+            }
+        ]
+    },
+    {
+        "question_id": 19,
+        "question": "A code consists of three distinct digits chosen from 1, 2, 3, 4, and 5. The first digit is smaller than the second, and the second digit is smaller than the third. How many valid codes are possible?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have a strong understanding of combinatorial problems and can apply reasoning to find the solution effectively, but I also recognize the value of evaluating multiple solutions.\"\n}",
+                "latency_seconds": 1.74
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I have a strong understanding of combinatorial problems, which makes me well-suited to independently solve this problem. However, I also recognize the value of evaluating potential solutions if multiple approaches are provided.\"\n}",
+                "latency_seconds": 1.75
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.2\n    },\n    \"reason\": \"I can independently reason through the combinatorial problem to find the number of valid codes, but I also recognize that evaluating multiple solutions could be valuable.\"\n}",
+                "latency_seconds": 1.53
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I feel more confident in solving the problem directly due to the combinatorial nature of choosing distinct digits, but I can also evaluate solutions as a Judge.\"\n}",
+                "latency_seconds": 1.51
+            }
+        ]
+    },
+    {
+        "question_id": 20,
+        "question": "Consider the Prisoner's Dilemma with payoffs (3,3) for mutual cooperation, (0,5) if player 1 cooperates and player 2 defects, (5,0) if player 1 defects and player 2 cooperates, and (1,1) for mutual defection. What is the unique pure-strategy Nash equilibrium?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"While I can solve the problem, I believe I am better suited to evaluate multiple solutions given the nature of the Nash equilibrium concept, which may have various interpretations and requires careful assessment.\"\n}",
+                "latency_seconds": 1.66
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I feel more confident in evaluating proposed solutions rather than independently solving the problem, as it requires assessing strategic interactions which I can analyze better.\"\n}",
+                "latency_seconds": 2.18
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.3,\n        \"Judge\": 0.7\n    },\n    \"reason\": \"I am more suited to evaluate proposed solutions due to the strategic nature of the problem, which may involve multiple interpretations of the Nash equilibrium concept.\"\n}",
+                "latency_seconds": 1.51
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"While I can analyze the game theory involved in the Prisoner's Dilemma, evaluating multiple proposed solutions and determining the correct Nash equilibrium requires a broader context that I may not fully possess. Therefore, I feel more confident in the role of Judge.\"\n}",
+                "latency_seconds": 2.0
+            }
+        ]
+    },
+    {
+        "question_id": 21,
+        "question": "In a zero-sum game, the row player's payoff matrix is [[2, -1], [-2, 3]]. Does the game have a pure-strategy saddle point? If so, give the saddle point and game value.",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I am more suited to evaluate potential solutions because assessing the existence of a saddle point in a payoff matrix requires careful analysis of various proposed strategies, which fits the judging role better.\"\n}",
+                "latency_seconds": 1.69
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I feel more equipped to evaluate potential solutions regarding the existence of a saddle point in the game rather than solving the matrix directly.\"\n}",
+                "latency_seconds": 1.84
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I feel more confident in evaluating potential solutions and determining correctness due to the structured nature of the problem, which involves identifying a saddle point and analyzing game theory concepts.\"\n}",
+                "latency_seconds": 1.54
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I have a good understanding of game theory concepts and can analyze the payoff matrix to determine the existence of a saddle point, but I may still need to evaluate different proposed solutions.\"\n}",
+                "latency_seconds": 1.53
+            }
+        ]
+    },
+    {
+        "question_id": 22,
+        "question": "Two players simultaneously choose Left or Right. Player 1's payoff is 2 if their choices match and 0 otherwise. Player 2's payoff is 1 if their choices match and 0 otherwise. What are the pure-strategy Nash equilibria?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have the capability to analyze the game theory problem and determine the Nash equilibria, but evaluating multiple proposed solutions may require additional context and comparison.\"\n}",
+                "latency_seconds": 1.26
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.8,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I have strong reasoning skills to analyze the game theory scenario and identify Nash equilibria, but I also have the ability to evaluate different proposed solutions effectively.\"\n}",
+                "latency_seconds": 2.11
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I feel confident in solving the problem due to knowledge of game theory and Nash equilibria, but I also recognize that a collaborative evaluation could enhance the assessment of multiple solutions.\"\n}",
+                "latency_seconds": 1.84
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.6,\n        \"Judge\": 0.4\n    },\n    \"reason\": \"I have a good understanding of game theory and can reason through the Nash equilibria, but I also recognize the complexity of evaluating potential solutions from others.\"\n}",
+                "latency_seconds": 2.15
+            }
+        ]
+    },
+    {
+        "question_id": 23,
+        "question": "In the matching-pennies zero-sum game, Player 1 wins 1 if the two choices match and loses 1 otherwise. Player 2 receives the opposite payoff. What is the mixed-strategy Nash equilibrium?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have a strong understanding of game theory and can analyze the problem to find the mixed-strategy Nash equilibrium. However, evaluating multiple solutions may also be relevant.\"\n}",
+                "latency_seconds": 1.54
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have a strong understanding of game theory concepts, allowing me to confidently solve the problem. However, evaluating multiple proposed solutions requires careful consideration of details, which I feel less confident about.\"\n}",
+                "latency_seconds": 2.46
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have a good understanding of game theory concepts and can independently derive the Nash equilibrium, but evaluating multiple solutions from other models could also be valuable.\"\n}",
+                "latency_seconds": 2.76
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have a good understanding of game theory concepts, particularly mixed-strategy Nash equilibria, which makes me confident in solving the problem. However, evaluating multiple solutions also requires careful consideration, so I have some confidence in that role as well.\"\n}",
+                "latency_seconds": 1.71
+            }
+        ]
+    },
+    {
+        "question_id": 24,
+        "question": "Consider the payoff matrix for a zero-sum game: [[4, 0], [2, 3]]. Player 1 maximizes the payoff and Player 2 minimizes it. What is the value of the game if both players may use mixed strategies?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I feel capable of solving the problem as it involves strategic reasoning and matrix analysis, but I also recognize the value of evaluating multiple solutions given the complexity of mixed strategies.\"\n}",
+                "latency_seconds": 2.56
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.9,\n        \"Judge\": 0.7\n    },\n    \"reason\": \"I feel confident in my ability to analyze and solve the problem due to my understanding of game theory, particularly in zero-sum games and mixed strategies. However, I also recognize that evaluating multiple proposed solutions could be beneficial, hence I have some confidence in the Judge role as well.\"\n}",
+                "latency_seconds": 3.58
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.3\n    },\n    \"reason\": \"I have a good understanding of game theory concepts and can analyze the payoff matrix to determine the value of the game, but evaluating multiple proposed solutions may require additional context.\"\n}",
+                "latency_seconds": 1.37
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Solver\", \"Judge\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.7,\n        \"Judge\": 0.5\n    },\n    \"reason\": \"I have a strong understanding of game theory, particularly in analyzing zero-sum games, which makes me more suited to solve the problem. However, I also recognize that judging multiple solutions requires careful consideration, thus I have moderate confidence in that role.\"\n}",
+                "latency_seconds": 2.46
+            }
+        ]
+    },
+    {
+        "question_id": 25,
+        "question": "Two firms simultaneously choose High Price or Low Price. Their payoffs are: (High, High)=(4,4), (High, Low)=(1,6), (Low, High)=(6,1), and (Low, Low)=(2,2). What is the unique pure-strategy Nash equilibrium?",
+        "assessments": [
+            {
+                "model_id": "model_1",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I feel more confident in evaluating the correctness of proposed solutions based on established game theory concepts, rather than independently solving the problem.\"\n}",
+                "latency_seconds": 1.55
+            },
+            {
+                "model_id": "model_2",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I believe I can effectively evaluate the reasoning behind multiple proposed solutions to identify the correct Nash equilibrium, while my confidence in independently solving the problem is lower due to the complexity of game theory.\"\n}",
+                "latency_seconds": 1.83
+            },
+            {
+                "model_id": "model_3",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"While I can analyze the game theory concepts involved, I believe I am better suited to evaluate multiple potential solutions due to the complexity of determining the Nash equilibrium.\"\n}",
+                "latency_seconds": 1.84
+            },
+            {
+                "model_id": "model_4",
+                "raw_response": "{\n    \"role_preferences\": [\"Judge\", \"Solver\"],\n    \"confidence_by_role\": {\n        \"Solver\": 0.4,\n        \"Judge\": 0.6\n    },\n    \"reason\": \"I am more suited to evaluate the reasoning of potential solutions to determine the correct Nash equilibrium rather than independently solving it.\"\n}",
+                "latency_seconds": 1.53
+            }
+        ]
+    }
+]

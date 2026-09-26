@@ -1,0 +1,205 @@
+[
+  {
+    "id": 1,
+    "category": "mathematics",
+    "difficulty": "hard",
+    "question": "A sequence is defined by a_1 = 2 and a_(n+1) = 3a_n + 2 for n >= 1. Find a_8.",
+    "correct_answer": "6560",
+    "reference_solution": "Define b_n = a_n + 1. Then b_(n+1) = 3b_n and b_1 = 3, so b_n = 3^n. Therefore a_n = 3^n - 1, giving a_8 = 3^8 - 1 = 6560."
+  },
+  {
+    "id": 2,
+    "category": "mathematics",
+    "difficulty": "hard",
+    "question": "How many 5-digit positive integers have five distinct digits and are divisible by 5?",
+    "correct_answer": "5712",
+    "reference_solution": "A divisible-by-5 number ends in 0 or 5. If it ends in 0, the first digit has 9 choices and the next three digits have 8, 7, and 6 choices, giving 3024. If it ends in 5, the first digit has 8 choices (1-9 except 5), followed by 8, 7, and 6 choices, giving 2688. Total = 3024 + 2688 = 5712."
+  },
+  {
+    "id": 3,
+    "category": "mathematics",
+    "difficulty": "hard",
+    "question": "Let x be a nonzero real number satisfying x + 1/x = 3. Find x^5 + 1/x^5.",
+    "correct_answer": "123",
+    "reference_solution": "Let S_n = x^n + x^(-n). Then S_0 = 2, S_1 = 3, and S_n = 3S_(n-1) - S_(n-2). Thus S_2 = 7, S_3 = 18, S_4 = 47, and S_5 = 123."
+  },
+  {
+    "id": 4,
+    "category": "mathematics",
+    "difficulty": "hard",
+    "question": "How many ordered pairs of positive integers (a,b) satisfy 1/a + 1/b = 1/6?",
+    "correct_answer": "9",
+    "reference_solution": "Rearrange to ab - 6a - 6b = 0, so (a-6)(b-6) = 36. Since a and b are positive and the left factors must be positive, each ordered solution corresponds to a positive divisor d of 36, with a-6=d and b-6=36/d. The number of positive divisors of 36 = 9."
+  },
+  {
+    "id": 5,
+    "category": "mathematics",
+    "difficulty": "hard",
+    "question": "Two fair six-sided dice are rolled. Given that their sum is at least 10, what is the probability that the sum is even?",
+    "correct_answer": "2/3",
+    "reference_solution": "The possible sums at least 10 are 10, 11, and 12. They occur in 3, 2, and 1 outcomes respectively, for 6 equally likely outcomes. Even sums are 10 and 12, giving 3+1=4 outcomes. Probability = 4/6 = 2/3."
+  },
+  {
+    "id": 6,
+    "category": "mathematics",
+    "difficulty": "hard",
+    "question": "Find the remainder when 7^100 is divided by 13.",
+    "correct_answer": "9",
+    "reference_solution": "Since 7^12 is congruent to 1 modulo 13 by Fermat's little theorem, 7^100 is congruent to 7^4 modulo 13. Now 7^2 = 49 is congruent to 10, so 7^4 is congruent to 100, which is congruent to 9 modulo 13."
+  },
+  {
+    "id": 7,
+    "category": "mathematics",
+    "difficulty": "hard",
+    "question": "A convex polygon has 90 diagonals. How many sides does it have?",
+    "correct_answer": "15",
+    "reference_solution": "An n-gon has n(n-3)/2 diagonals. Set n(n-3)/2 = 90, giving n(n-3)=180 and n^2-3n-180=0. Factorization gives (n-15)(n+12)=0, so n=15."
+  },
+
+  {
+    "id": 8,
+    "category": "physics",
+    "difficulty": "hard",
+    "question": "A 2 kg object starts from rest and is acted on by a constant net force of 6 N for 5 seconds. What are its final speed and the distance traveled?",
+    "correct_answer": "Final speed = 15 m/s; distance = 37.5 m",
+    "reference_solution": "Acceleration is F/m = 6/2 = 3 m/s^2. Starting from rest, v = at = 3*5 = 15 m/s. Distance is s = (1/2)at^2 = 0.5*3*25 = 37.5 m."
+  },
+  {
+    "id": 9,
+    "category": "physics",
+    "difficulty": "hard",
+    "question": "A projectile is launched horizontally from a height of 45 m with a horizontal speed of 20 m/s. Ignore air resistance and take g = 10 m/s^2. How far horizontally does it travel before hitting the ground?",
+    "correct_answer": "60 m",
+    "reference_solution": "Vertical motion gives 45 = (1/2)(10)t^2, so t^2=9 and t=3 s. Horizontal distance is x=20*3=60 m."
+  },
+  {
+    "id": 10,
+    "category": "physics",
+    "difficulty": "hard",
+    "question": "A 4 ohm resistor and a 6 ohm resistor are connected in parallel to a 12 V ideal battery. What is the total current supplied by the battery?",
+    "correct_answer": "5 A",
+    "reference_solution": "For parallel resistors, 1/R = 1/4 + 1/6 = 5/12, so R = 12/5 = 2.4 ohms. Total current is I=V/R=12/2.4=5 A."
+  },
+  {
+    "id": 11,
+    "category": "physics",
+    "difficulty": "hard",
+    "question": "A 0.5 kg block slides from rest down a frictionless track from a height of 5 m. Take g = 10 m/s^2. What is its speed at the bottom?",
+    "correct_answer": "10 m/s",
+    "reference_solution": "Conservation of mechanical energy gives mgh = (1/2)mv^2. Thus v = sqrt(2gh) = sqrt(2*10*5) = 10 m/s."
+  },
+  {
+    "id": 12,
+    "category": "physics",
+    "difficulty": "hard",
+    "question": "A gas occupies 2 L at 300 K at constant pressure. If its temperature increases to 450 K, what volume will it occupy?",
+    "correct_answer": "3 L",
+    "reference_solution": "At constant pressure, V/T is constant. Therefore V2 = V1*T2/T1 = 2*(450/300) = 3 L."
+  },
+  {
+    "id": 13,
+    "category": "physics",
+    "difficulty": "hard",
+    "question": "A photon has wavelength 600 nm. Using h = 6.626e-34 J*s and c = 3.00e8 m/s, calculate its energy in joules.",
+    "correct_answer": "Approximately 3.31e-19 J",
+    "reference_solution": "Use E=hc/lambda. With lambda=600 nm=6.00e-7 m, E=(6.626e-34*3.00e8)/(6.00e-7) = 3.313e-19 J."
+  },
+
+  {
+    "id": 14,
+    "category": "logic_constraint",
+    "difficulty": "hard",
+    "question": "Five people A, B, C, D, and E stand in a line. A is somewhere to the left of B. C is immediately to the right of D. E is not at either end. If D is in position 2, what is the complete order?",
+    "correct_answer": "A D C E B",
+    "reference_solution": "D is position 2 and C is immediately right of D, so C is position 3. E cannot be at an end, so E must be position 4. The remaining positions are 1 and 5 for A and B. Since A is left of B, A=1 and B=5."
+  },
+  {
+    "id": 15,
+    "category": "logic_constraint",
+    "difficulty": "hard",
+    "question": "Four people A, B, C, and D each own exactly one of four pets: cat, dog, fish, or bird. A does not own the cat or dog. B owns neither the bird nor fish. C does not own the dog. D owns the fish. What pet does each person own?",
+    "correct_answer": "A=bird, B=cat, C=dog, D=fish",
+    "reference_solution": "D=fish. B cannot be bird or fish, so B must be cat or dog. A cannot be cat or dog, and fish is taken, so A=bird. Therefore B cannot be bird or fish and must be cat. C then gets dog."
+  },
+  {
+    "id": 16,
+    "category": "logic_constraint",
+    "difficulty": "hard",
+    "question": "There are exactly three boxes: red, blue, and green. Exactly one contains gold. The labels are all wrong. The red box says 'gold is in the red box', the blue box says 'gold is in the red box', and the green box says 'gold is not in the blue box'. Which box contains the gold?",
+    "correct_answer": "Blue box",
+    "reference_solution": "All labels are false. If gold were in red, both the red and blue statements would be true, impossible. If gold were in green, the green statement would be false? The green statement says gold is not in blue, which would be true, impossible. Therefore gold must be in blue. Then red statement is false, blue statement is false, and green statement is false."
+  },
+  {
+    "id": 17,
+    "category": "logic_constraint",
+    "difficulty": "hard",
+    "question": "Six books A, B, C, D, E, and F are arranged on a shelf. A must be before D. B must be immediately before C. E must be after D. F cannot be first. If B is in position 3, what is the only possible order?",
+    "correct_answer": "A D B C E F",
+    "reference_solution": "B=3 and C=4. A must be before D, and E must be after D. The remaining positions 1,2,5,6 contain A,D,E,F. A must be before D, and E after D, while F cannot be first. The only arrangement satisfying all constraints is A,D,B,C,E,F."
+  },
+  {
+    "id": 18,
+    "category": "logic_constraint",
+    "difficulty": "hard",
+    "question": "Exactly one of four statements is true: (1) A is true, (2) B is true, (3) A and B are both true, (4) A and B are both false. Which pair of truth values for A and B satisfies this condition?",
+    "correct_answer": "A=false, B=false",
+    "reference_solution": "If A=false and B=false, statements 1, 2, and 3 are false, while statement 4 is true, so exactly one statement is true. Other assignments make at least two statements true or make the condition fail."
+  },
+  {
+    "id": 19,
+    "category": "logic_constraint",
+    "difficulty": "hard",
+    "question": "A code consists of three distinct digits chosen from 1, 2, 3, 4, and 5. The first digit is smaller than the second, and the second digit is smaller than the third. How many valid codes are possible?",
+    "correct_answer": "10",
+    "reference_solution": "Because the digits must be distinct and strictly increasing, each valid code corresponds to choosing any 3 of the 5 digits. Thus the number is C(5,3)=10."
+  },
+
+  {
+    "id": 20,
+    "category": "game_theory",
+    "difficulty": "hard",
+    "question": "Consider the Prisoner's Dilemma with payoffs (3,3) for mutual cooperation, (0,5) if player 1 cooperates and player 2 defects, (5,0) if player 1 defects and player 2 cooperates, and (1,1) for mutual defection. What is the unique pure-strategy Nash equilibrium?",
+    "correct_answer": "Both players defect",
+    "reference_solution": "For each player, defecting gives a higher payoff regardless of the opponent's action: 5>3 if the opponent cooperates, and 1>0 if the opponent defects. Therefore defection is strictly dominant for both players, giving the unique Nash equilibrium (Defect, Defect)."
+  },
+  {
+  "id": 21,
+  "category": "game_theory",
+  "difficulty": "hard",
+  "question": "In a zero-sum game, the row player's payoff matrix is [[2, -1], [-2, 3]]. Does the game have a pure-strategy saddle point? If so, give the saddle point and game value.",
+  "correct_answer": "No. There is no pure-strategy saddle point.",
+  "reference_solution": "Row minima are -1 and -2, so the row player's maximin is -1. Column maxima are 2 and 3, so the minimax is 2. Since maximin (-1) is not equal to minimax (2), there is no pure-strategy saddle point."
+},
+  {
+    "id": 22,
+    "category": "game_theory",
+    "difficulty": "hard",
+    "question": "Two players simultaneously choose Left or Right. Player 1's payoff is 2 if their choices match and 0 otherwise. Player 2's payoff is 1 if their choices match and 0 otherwise. What are the pure-strategy Nash equilibria?",
+    "correct_answer": "(Left, Left) and (Right, Right)",
+    "reference_solution": "When both choose Left, neither player gains by switching alone because switching causes a mismatch and reduces their payoff to 0. The same is true when both choose Right. Therefore both matching outcomes are pure-strategy Nash equilibria."
+  },
+  {
+    "id": 23,
+    "category": "game_theory",
+    "difficulty": "hard",
+    "question": "In the matching-pennies zero-sum game, Player 1 wins 1 if the two choices match and loses 1 otherwise. Player 2 receives the opposite payoff. What is the mixed-strategy Nash equilibrium?",
+    "correct_answer": "Both players choose Heads with probability 1/2 and Tails with probability 1/2.",
+    "reference_solution": "To make Player 1 indifferent between Heads and Tails, Player 2 must choose Heads and Tails with equal probability. The same argument applies to Player 2. Therefore both randomize uniformly: (1/2,1/2)."
+  },
+  {
+    "id": 24,
+    "category": "game_theory",
+    "difficulty": "hard",
+    "question": "Consider the payoff matrix for a zero-sum game: [[4, 0], [2, 3]]. Player 1 maximizes the payoff and Player 2 minimizes it. What is the value of the game if both players may use mixed strategies?",
+    "correct_answer": "12/5 = 2.4",
+    "reference_solution": "Let Player 1 choose row 1 with probability p. The expected payoff against column 1 is 4p+2(1-p)=2+2p. Against column 2 it is 0p+3(1-p)=3-3p. Equalize them: 2+2p=3-3p, giving p=1/5. The value is 2+2/5=12/5."
+  },
+  {
+    "id": 25,
+    "category": "game_theory",
+    "difficulty": "hard",
+    "question": "Two firms simultaneously choose High Price or Low Price. Their payoffs are: (High, High)=(4,4), (High, Low)=(1,6), (Low, High)=(6,1), and (Low, Low)=(2,2). What is the unique pure-strategy Nash equilibrium?",
+    "correct_answer": "Both choose Low Price",
+    "reference_solution": "For either firm, Low Price gives a higher payoff regardless of the other firm's choice: 6>4 when the other chooses High, and 2>1 when the other chooses Low. Thus Low Price is strictly dominant for both firms, so the unique pure-strategy Nash equilibrium is (Low, Low)."
+  }
+]

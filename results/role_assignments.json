@@ -1,0 +1,402 @@
+[
+    {
+        "question_id": 1,
+        "candidate_scores": {
+            "model_1": 3.0,
+            "model_2": 3.0,
+            "model_3": 2.6,
+            "model_4": 3.0
+        },
+        "selected_judge": "model_1",
+        "assignments": {
+            "model_1": "Judge",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 2,
+        "candidate_scores": {
+            "model_1": 1.8,
+            "model_2": 2.0,
+            "model_3": 2.6,
+            "model_4": 2.4
+        },
+        "selected_judge": "model_3",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Solver",
+            "model_3": "Judge",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 3,
+        "candidate_scores": {
+            "model_1": 2.6,
+            "model_2": 3.0,
+            "model_3": 3.1,
+            "model_4": 3.0
+        },
+        "selected_judge": "model_3",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Solver",
+            "model_3": "Judge",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 4,
+        "candidate_scores": {
+            "model_1": 2.6,
+            "model_2": 2.4,
+            "model_3": 2.6,
+            "model_4": 2.8
+        },
+        "selected_judge": "model_4",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Judge"
+        }
+    },
+    {
+        "question_id": 5,
+        "candidate_scores": {
+            "model_1": 1.9,
+            "model_2": 1.7,
+            "model_3": 1.7,
+            "model_4": 1.7
+        },
+        "selected_judge": "model_1",
+        "assignments": {
+            "model_1": "Judge",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 6,
+        "candidate_scores": {
+            "model_1": 2.7,
+            "model_2": 2.9,
+            "model_3": 2.9,
+            "model_4": 2.9
+        },
+        "selected_judge": "model_2",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Judge",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 7,
+        "candidate_scores": {
+            "model_1": 2.6,
+            "model_2": 2.9,
+            "model_3": 2.6,
+            "model_4": 3.0
+        },
+        "selected_judge": "model_4",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Judge"
+        }
+    },
+    {
+        "question_id": 8,
+        "candidate_scores": {
+            "model_1": 2.6,
+            "model_2": 2.9,
+            "model_3": 2.7,
+            "model_4": 2.6
+        },
+        "selected_judge": "model_2",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Judge",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 9,
+        "candidate_scores": {
+            "model_1": 3.0,
+            "model_2": 3.0,
+            "model_3": 3.0,
+            "model_4": 3.1
+        },
+        "selected_judge": "model_4",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Judge"
+        }
+    },
+    {
+        "question_id": 10,
+        "candidate_scores": {
+            "model_1": 2.1,
+            "model_2": 2.7,
+            "model_3": 2.1,
+            "model_4": 2.1
+        },
+        "selected_judge": "model_2",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Judge",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 11,
+        "candidate_scores": {
+            "model_1": 2.7,
+            "model_2": 2.5,
+            "model_3": 2.5,
+            "model_4": 2.9
+        },
+        "selected_judge": "model_4",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Judge"
+        }
+    },
+    {
+        "question_id": 12,
+        "candidate_scores": {
+            "model_1": 3.1,
+            "model_2": 3.1,
+            "model_3": 3.1,
+            "model_4": 3.1
+        },
+        "selected_judge": "model_4",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Judge"
+        }
+    },
+    {
+        "question_id": 13,
+        "candidate_scores": {
+            "model_1": 2.7,
+            "model_2": 2.9,
+            "model_3": 2.9,
+            "model_4": 2.9
+        },
+        "selected_judge": "model_2",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Judge",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 14,
+        "candidate_scores": {
+            "model_1": 3.0,
+            "model_2": 2.7,
+            "model_3": 2.9,
+            "model_4": 2.8
+        },
+        "selected_judge": "model_1",
+        "assignments": {
+            "model_1": "Judge",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 15,
+        "candidate_scores": {
+            "model_1": 3.0,
+            "model_2": 2.4,
+            "model_3": 2.2,
+            "model_4": 2.2
+        },
+        "selected_judge": "model_1",
+        "assignments": {
+            "model_1": "Judge",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 16,
+        "candidate_scores": {
+            "model_1": 3.2,
+            "model_2": 2.3,
+            "model_3": 2.3,
+            "model_4": 2.7
+        },
+        "selected_judge": "model_1",
+        "assignments": {
+            "model_1": "Judge",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 17,
+        "candidate_scores": {
+            "model_1": 3.1,
+            "model_2": 2.7,
+            "model_3": 2.6,
+            "model_4": 2.7
+        },
+        "selected_judge": "model_1",
+        "assignments": {
+            "model_1": "Judge",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 18,
+        "candidate_scores": {
+            "model_1": 1.8,
+            "model_2": 1.8,
+            "model_3": 2.0,
+            "model_4": 2.0
+        },
+        "selected_judge": "model_3",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Solver",
+            "model_3": "Judge",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 19,
+        "candidate_scores": {
+            "model_1": 2.6,
+            "model_2": 2.8,
+            "model_3": 2.4,
+            "model_4": 2.6
+        },
+        "selected_judge": "model_2",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Judge",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 20,
+        "candidate_scores": {
+            "model_1": 1.7,
+            "model_2": 1.7,
+            "model_3": 1.9,
+            "model_4": 1.7
+        },
+        "selected_judge": "model_3",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Solver",
+            "model_3": "Judge",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 21,
+        "candidate_scores": {
+            "model_1": 2.2,
+            "model_2": 2.2,
+            "model_3": 2.2,
+            "model_4": 1.8
+        },
+        "selected_judge": "model_1",
+        "assignments": {
+            "model_1": "Judge",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 22,
+        "candidate_scores": {
+            "model_1": 2.4,
+            "model_2": 2.6,
+            "model_3": 2.4,
+            "model_4": 2.6
+        },
+        "selected_judge": "model_2",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Judge",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 23,
+        "candidate_scores": {
+            "model_1": 2.4,
+            "model_2": 2.4,
+            "model_3": 2.4,
+            "model_4": 2.4
+        },
+        "selected_judge": "model_1",
+        "assignments": {
+            "model_1": "Judge",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 24,
+        "candidate_scores": {
+            "model_1": 2.6,
+            "model_2": 2.8,
+            "model_3": 2.6,
+            "model_4": 2.8
+        },
+        "selected_judge": "model_2",
+        "assignments": {
+            "model_1": "Solver",
+            "model_2": "Judge",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    },
+    {
+        "question_id": 25,
+        "candidate_scores": {
+            "model_1": 1.8,
+            "model_2": 1.8,
+            "model_3": 1.8,
+            "model_4": 1.8
+        },
+        "selected_judge": "model_1",
+        "assignments": {
+            "model_1": "Judge",
+            "model_2": "Solver",
+            "model_3": "Solver",
+            "model_4": "Solver"
+        }
+    }
+]

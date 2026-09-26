@@ -1,0 +1,51 @@
+{
+    "initial_solvers": {
+        "calls": 75,
+        "total_seconds": 316.92,
+        "average_seconds": 4.23,
+        "min_seconds": 2.05,
+        "max_seconds": 8.5
+    },
+    "peer_reviews": {
+        "calls": 150,
+        "total_seconds": 248.34,
+        "average_seconds": 1.66,
+        "min_seconds": 0.99,
+        "max_seconds": 3.91
+    },
+    "refinement": {
+        "calls": 75,
+        "total_seconds": 276.91,
+        "average_seconds": 3.69,
+        "min_seconds": 1.4,
+        "max_seconds": 5.81
+    },
+    "full_debate_judge": {
+        "calls": 25,
+        "total_seconds": 46.6,
+        "average_seconds": 1.86,
+        "min_seconds": 1.5,
+        "max_seconds": 2.7
+    },
+    "single_llm_baseline": {
+        "calls": 25,
+        "total_seconds": 81.12,
+        "average_seconds": 3.24,
+        "min_seconds": 1.54,
+        "max_seconds": 6.0
+    },
+    "independent_solvers_judge": {
+        "calls": 25,
+        "total_seconds": 51.32,
+        "average_seconds": 2.05,
+        "min_seconds": 1.63,
+        "max_seconds": 2.85
+    },
+    "full_debate_per_question": {
+        "calls": 25,
+        "total_seconds": 888.77,
+        "average_seconds": 35.55,
+        "min_seconds": 25.58,
+        "max_seconds": 54.41
+    }
+}

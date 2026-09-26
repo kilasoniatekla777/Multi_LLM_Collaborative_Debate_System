@@ -1,0 +1,239 @@
+[
+  {
+    "question_id": 1,
+    "key_points": [
+      "A belief is something a person accepts or holds to be true.",
+      "Knowledge is generally understood as a belief that satisfies conditions such as truth and justification, although philosophers disagree about the exact definition.",
+      "An opinion is a judgment or view that may not have sufficient evidence or justification.",
+      "The answer should distinguish these concepts rather than treating belief, knowledge, and opinion as identical."
+    ]
+  },
+  {
+    "question_id": 2,
+    "key_points": [
+      "Descartes argues that the act of thinking or doubting establishes the existence of the thinker.",
+      "Even if a person doubts everything else, they cannot doubt that thinking is occurring without engaging in thought.",
+      "The statement is intended to provide a foundation of certainty for Descartes' philosophy.",
+      "It does not by itself prove that everything a person thinks is true."
+    ]
+  },
+  {
+    "question_id": 3,
+    "key_points": [
+      "Philosophical skepticism questions whether humans can have certain or reliable knowledge.",
+      "Skepticism about the senses points out that perception can sometimes be mistaken or misleading.",
+      "Examples can include dreams, optical illusions, or perceptual errors.",
+      "Skepticism does not necessarily claim that all beliefs are false; it can instead challenge whether we have sufficient justification for certainty."
+    ]
+  },
+  {
+    "question_id": 4,
+    "key_points": [
+      "The question concerns the traditional justified-true-belief account of knowledge.",
+      "A person can have a belief that is true and apparently justified but true only because of luck.",
+      "Gettier-style cases are used to show that justified true belief may not be sufficient for knowledge.",
+      "The problem motivates attempts to add further conditions to the definition of knowledge."
+    ]
+  },
+  {
+    "question_id": 5,
+    "key_points": [
+      "The problem asks whether an external world exists independently of our conscious experiences.",
+      "Skeptical arguments point out that all experience is mediated through perception and could potentially be misleading.",
+      "Realist positions argue that the best explanation of stable and shared experiences is that an external world exists.",
+      "The answer should recognize that establishing the external world's existence with absolute certainty is philosophically difficult."
+    ]
+  },
+  {
+    "question_id": 6,
+    "key_points": [
+      "Utilitarianism is a consequentialist ethical theory.",
+      "An action is evaluated primarily by its consequences.",
+      "A classical utilitarian seeks to maximize overall well-being, happiness, or utility.",
+      "The interests of different individuals count toward the overall outcome.",
+      "A simple example should show choosing the action expected to produce greater overall benefit."
+    ]
+  },
+  {
+    "question_id": 7,
+    "key_points": [
+      "Consequentialism evaluates actions primarily according to their outcomes.",
+      "Deontological ethics evaluates actions according to duties, rules, principles, or constraints rather than only their consequences.",
+      "A consequentialist may permit an action if it produces sufficiently good consequences.",
+      "A deontologist may regard certain actions as wrong even when they would produce good consequences."
+    ]
+  },
+  {
+    "question_id": 8,
+    "key_points": [
+      "Kant's formulation of humanity requires treating persons as ends in themselves.",
+      "People should not be treated merely as tools for achieving someone else's goals.",
+      "Respect for rational agency and autonomy is central to the idea.",
+      "Using another person with deception or coercion can violate this principle because it prevents genuine autonomous choice."
+    ]
+  },
+  {
+    "question_id": 9,
+    "key_points": [
+      "Kant's deontological approach places importance on moral duties and principles rather than consequences alone.",
+      "Kant's ethics strongly restricts lying because a universal acceptance of lying would undermine the practice of truthful communication.",
+      "A utilitarian evaluates the consequences of lying and may permit it if doing so produces greater overall well-being.",
+      "The example demonstrates a fundamental difference between duty-based and consequence-based ethics."
+    ]
+  },
+  {
+    "question_id": 10,
+    "key_points": [
+      "Different ethical theories can evaluate intention and outcome differently.",
+      "Utilitarianism primarily evaluates the consequences of an action rather than the agent's motive.",
+      "Kantian ethics gives moral importance to acting from duty and the principle behind the action.",
+      "Virtue ethics evaluates the character and dispositions expressed by the action.",
+      "Therefore, a good outcome does not necessarily make an action morally good under every ethical theory."
+    ]
+  },
+  {
+    "question_id": 11,
+    "key_points": [
+      "Sartre's claim means that human beings do not have a predetermined essence or fixed purpose that determines what they must become.",
+      "Human beings first exist and then define themselves through their choices and actions.",
+      "This is connected to Sartre's account of radical freedom.",
+      "Freedom also creates responsibility because individuals participate in creating who they become."
+    ]
+  },
+  {
+    "question_id": 12,
+    "key_points": [
+      "Bad faith is Sartre's concept describing self-deception about one's freedom and responsibility.",
+      "A person may pretend that they are completely determined by a social role, circumstance, or external expectation.",
+      "This allows the person to avoid confronting their freedom and responsibility.",
+      "Bad faith does not simply mean ordinary lying to another person; it involves a problematic relationship with oneself."
+    ]
+  },
+  {
+    "question_id": 13,
+    "key_points": [
+      "Sartre argues that human beings are fundamentally free to choose their responses and projects.",
+      "Radical freedom implies significant responsibility for one's choices.",
+      "People cannot completely escape responsibility by blaming an external essence or predetermined nature.",
+      "Sartre connects freedom with responsibility and the anxiety that accompanies having to choose."
+    ]
+  },
+  {
+    "question_id": 14,
+    "key_points": [
+      "Camus' absurd arises from the conflict between the human desire for meaning, order, or purpose and the world's apparent indifference to that desire.",
+      "The absurd is not simply the claim that life has no meaning.",
+      "It describes the relationship or tension between humans seeking meaning and a world that does not provide an ultimate answer.",
+      "Recognizing the absurd is central to Camus' philosophical response to existence."
+    ]
+  },
+  {
+    "question_id": 15,
+    "key_points": [
+      "Camus considers suicide as an attempted response to the absurd but rejects it as a philosophical solution.",
+      "He argues that one should confront the absurd rather than escape it.",
+      "His response involves continuing to live despite the absence of guaranteed ultimate meaning.",
+      "Revolt, freedom, and living intensely are associated with his response to the absurd.",
+      "The answer should distinguish Camus' position from the conclusion that absurdity automatically makes life worthless."
+    ]
+  },
+  {
+    "question_id": 16,
+    "key_points": [
+      "The Socratic method uses questioning and dialogue to examine beliefs and assumptions.",
+      "Socrates often exposes contradictions or weaknesses in a person's reasoning through questions.",
+      "The method encourages intellectual humility and recognition of one's own ignorance.",
+      "The goal is not simply to provide information but to investigate whether a belief is actually justified."
+    ]
+  },
+  {
+    "question_id": 17,
+    "key_points": [
+      "Plato's Allegory of the Cave contrasts appearances or shadows with deeper understanding of reality.",
+      "People in the cave mistake shadows for reality because they have never seen anything else.",
+      "The journey out of the cave represents education or philosophical development.",
+      "The sun represents the highest form of understanding, commonly associated with the Form of the Good.",
+      "The allegory concerns ignorance, education, knowledge, and the difficulty of changing one's understanding."
+    ]
+  },
+  {
+    "question_id": 18,
+    "key_points": [
+      "For Aristotle, virtue is a stable character trait or disposition that enables a person to act well.",
+      "Virtue is developed through habituation and repeated practice.",
+      "A good character involves appropriate emotional responses and actions.",
+      "Aristotle connects virtue with human flourishing or eudaimonia.",
+      "Virtue is not merely knowing what is good; it involves developing the character to act appropriately."
+    ]
+  },
+  {
+    "question_id": 19,
+    "key_points": [
+      "Aristotle's doctrine of the mean does not mean choosing an exact mathematical midpoint.",
+      "The appropriate mean depends on the situation and the person.",
+      "Virtue lies between excess and deficiency relative to what is appropriate.",
+      "Practical wisdom is needed to determine what the appropriate response is in a particular circumstance.",
+      "For example, courage lies between cowardice and recklessness, but the appropriate degree depends on the situation."
+    ]
+  },
+  {
+    "question_id": 20,
+    "key_points": [
+      "The mind-body problem concerns the relationship between mental phenomena and physical phenomena.",
+      "Mental experiences such as thoughts, emotions, and conscious experiences appear different from physical brain processes.",
+      "Dualist theories treat mind and body as fundamentally distinct in some sense.",
+      "Physicalist theories attempt to explain mental phenomena in terms of physical processes.",
+      "A central difficulty is explaining how subjective conscious experience relates to objective physical processes."
+    ]
+  },
+  {
+    "question_id": 21,
+    "key_points": [
+      "A perfect simulation of brain processes would raise the question of whether functional duplication is sufficient for consciousness.",
+      "One position argues that sufficiently accurate functional organization could produce genuine consciousness.",
+      "Another position argues that simulating the physical processes of a brain might reproduce behavior without necessarily producing subjective experience.",
+      "The question depends partly on what theory of consciousness one accepts.",
+      "The answer should distinguish observable behavior from subjective conscious experience."
+    ]
+  },
+  {
+    "question_id": 22,
+    "key_points": [
+      "Determinism is the view that events, including human actions, are determined by prior conditions and causes.",
+      "Free will is commonly understood as involving meaningful control or authorship over one's choices.",
+      "If every action is determined by prior causes, it becomes difficult to explain in what sense people could have acted otherwise.",
+      "The debate concerns whether free will and determinism are compatible or incompatible.",
+      "Different philosophical positions include hard determinism, libertarianism, and compatibilism."
+    ]
+  },
+  {
+    "question_id": 23,
+    "key_points": [
+      "Compatibilism argues that free will and determinism can coexist.",
+      "A person can be free when their action results from their own desires, intentions, and reasoning rather than external coercion.",
+      "Compatibilists do not necessarily require that the person could have acted differently under exactly identical conditions.",
+      "Moral responsibility can therefore be understood in terms of the agent's internal motivations and control.",
+      "The answer should distinguish compatibilism from the claim that determinism makes all responsibility impossible."
+    ]
+  },
+  {
+    "question_id": 24,
+    "key_points": [
+      "Political philosophy examines questions about authority, freedom, rights, and the organization of society.",
+      "Individuals may accept restrictions on some freedoms in exchange for benefits such as security, cooperation, infrastructure, and social order.",
+      "Social contract theories use versions of this idea to explain political authority.",
+      "The legitimacy of restrictions depends on questions such as consent, necessity, fairness, proportionality, and protection of rights.",
+      "The answer should recognize that not every restriction of freedom is automatically justified."
+    ]
+  },
+  {
+    "question_id": 25,
+    "key_points": [
+      "The argument assumes that increased happiness is sufficient evidence that an idea is good for a person.",
+      "It assumes that happiness is a reliable measure of well-being.",
+      "It may overlook other values such as truth, autonomy, knowledge, authenticity, or long-term interests.",
+      "An idea could make someone temporarily happier while being false or harmful in other ways.",
+      "The argument therefore requires additional assumptions about the relationship between happiness, truth, and well-being."
+    ]
+  }
+]

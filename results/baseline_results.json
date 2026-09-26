@@ -1,0 +1,352 @@
+[
+    {
+        "question_id": 1,
+        "question": "A sequence is defined by a_1 = 2 and a_(n+1) = 3a_n + 2 for n >= 1. Find a_8.",
+        "correct_answer": "6560",
+        "reference_solution": "Define b_n = a_n + 1. Then b_(n+1) = 3b_n and b_1 = 3, so b_n = 3^n. Therefore a_n = 3^n - 1, giving a_8 = 3^8 - 1 = 6560.",
+        "baseline_solution": {
+            "reasoning": "We start with the initial value a_1 = 2. We will compute the next terms using the recurrence relation a_(n+1) = 3a_n + 2 step by step:\n\n1. Compute a_2:  a_2 = 3 * a_1 + 2 = 3 * 2 + 2 = 6 + 2 = 8\n2. Compute a_3:  a_3 = 3 * a_2 + 2 = 3 * 8 + 2 = 24 + 2 = 26\n3. Compute a_4:  a_4 = 3 * a_3 + 2 = 3 * 26 + 2 = 78 + 2 = 80\n4. Compute a_5:  a_5 = 3 * a_4 + 2 = 3 * 80 + 2 = 240 + 2 = 242\n5. Compute a_6:  a_6 = 3 * a_5 + 2 = 3 * 242 + 2 = 726 + 2 = 728\n6. Compute a_7:  a_7 = 3 * a_6 + 2 = 3 * 728 + 2 = 2184 + 2 = 2186\n7. Compute a_8:  a_8 = 3 * a_7 + 2 = 3 * 2186 + 2 = 6558 + 2 = 6560\n\nWe can verify the calculations step by step to confirm accuracy.",
+            "final_answer": "6560",
+            "latency_seconds": 3.73,
+            "input_tokens": 122,
+            "output_tokens": 358,
+            "total_tokens": 480
+        }
+    },
+    {
+        "question_id": 2,
+        "question": "How many 5-digit positive integers have five distinct digits and are divisible by 5?",
+        "correct_answer": "5712",
+        "reference_solution": "A divisible-by-5 number ends in 0 or 5. If it ends in 0, the first digit has 9 choices and the next three digits have 8, 7, and 6 choices, giving 3024. If it ends in 5, the first digit has 8 choices (1-9 except 5), followed by 8, 7, and 6 choices, giving 2688. Total = 3024 + 2688 = 5712.",
+        "baseline_solution": {
+            "reasoning": "To solve the problem, we need to find 5-digit positive integers with distinct digits that are divisible by 5. A number is divisible by 5 if its last digit is either 0 or 5. We will consider two cases based on the last digit: Case 1 where the last digit is 0 and Case 2 where the last digit is 5. \n\n**Case 1: Last digit is 0**  \n- The first digit (which cannot be 0) can be any of the digits from 1 to 9. Therefore, we have 9 choices for the first digit.  \n- The remaining three digits can be selected from the 8 remaining digits (1-9 excluding the first digit and including 2-9). \n- Thus, we can choose 3 digits from the remaining 8 digits, which can be arranged in 3! (factorial) ways.  \n- Hence, the total number of 5-digit numbers with last digit 0 is:  \n  9 (choices for the first digit) * C(8, 3) * 3! = 9 * (56) * 6 = 3024. \n\n**Case 2: Last digit is 5**  \n- Now, the last digit is fixed as 5. For the first digit, we can choose from 1 to 9 (i.e., 1-4 or 6-9; we cannot use 0 or 5). Therefore, we have 8 choices for the first digit (1-4, 6-9).  \n- The remaining digits can be chosen from the other digits (0-4, 6-9 excluding the first digit). Thus we can select 3 digits from the remaining 8 digits.  \n- The total number of 5-digit numbers with last digit 5 is:  \n  8 (choices for the first digit) * C(8, 3) * 3! = 8 * (56) * 6 = 2688. \n\nFinally, we add the total from both cases together: 3024 (Case 1) + 2688 (Case 2) = 5712. \n\nTherefore, the total number of 5-digit positive integers with five distinct digits that are divisible by 5 is 5712.",
+            "final_answer": "5712",
+            "latency_seconds": 5.11,
+            "input_tokens": 103,
+            "output_tokens": 524,
+            "total_tokens": 627
+        }
+    },
+    {
+        "question_id": 3,
+        "question": "Let x be a nonzero real number satisfying x + 1/x = 3. Find x^5 + 1/x^5.",
+        "correct_answer": "123",
+        "reference_solution": "Let S_n = x^n + x^(-n). Then S_0 = 2, S_1 = 3, and S_n = 3S_(n-1) - S_(n-2). Thus S_2 = 7, S_3 = 18, S_4 = 47, and S_5 = 123.",
+        "baseline_solution": {
+            "reasoning": "We start with the equation x + 1/x = 3. We will first find x^2 + 1/x^2 using this information.\n\n1. Square both sides of the equation:\n   (x + 1/x)^2 = 3^2\n   => x^2 + 2*x*1/x + 1/x^2 = 9\n   => x^2 + 2 + 1/x^2 = 9\n   => x^2 + 1/x^2 = 9 - 2\n   => x^2 + 1/x^2 = 7.\n\n2. Next, we need x^3 + 1/x^3. We use the identity:\n   x^3 + 1/x^3 = (x + 1/x)(x^2 + 1/x^2).\n   From earlier, we found that x + 1/x = 3 and x^2 + 1/x^2 = 7:\n   x^3 + 1/x^3 = (3)(7) = 21.\n\n3. Finally, we find x^5 + 1/x^5 using the identity:\n   x^5 + 1/x^5 = (x^3 + 1/x^3)(x^2 + 1/x^2) - (x + 1/x).\n   We have:\n   x^5 + 1/x^5 = (21)(7) - 3\n   = 147 - 3\n   = 144.\n\nThus, x^5 + 1/x^5 = 144.",
+            "final_answer": "144",
+            "latency_seconds": 3.08,
+            "input_tokens": 114,
+            "output_tokens": 368,
+            "total_tokens": 482
+        }
+    },
+    {
+        "question_id": 4,
+        "question": "How many ordered pairs of positive integers (a,b) satisfy 1/a + 1/b = 1/6?",
+        "correct_answer": "9",
+        "reference_solution": "Rearrange to ab - 6a - 6b = 0, so (a-6)(b-6) = 36. Since a and b are positive and the left factors must be positive, each ordered solution corresponds to a positive divisor d of 36, with a-6=d and b-6=36/d. The number of positive divisors of 36 = 9.",
+        "baseline_solution": {
+            "reasoning": "To solve for ordered pairs of positive integers (a, b) that satisfy the equation 1/a + 1/b = 1/6, we first find a common denominator for the left side of the equation. The common denominator is ab, so we rewrite the equation as:\\n\\n\\n\\n  b + a = ab/6.\\n\\nWe can rearrange this to get 6(b + a) = ab. After expanding the left side, we obtain: \\n\\nab - 6a - 6b = 0.\\n\\nNext, we rearrange the equation into a more convenient form for factoring:\\n\\nab - 6a - 6b + 36 = 36.\\n\\nThis can be factored as: \\n\\n (a - 6)(b - 6) = 36.\\n\\nNow, we will determine the positive integer pairs (x, y) such that xy = 36, where x = a - 6 and y = b - 6.  Firstly, we find the factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. This leads us to the positive factor pairs: \\n\\n(1,36), (2,18), (3,12), (4,9), (6,6), (9,4), (12,3), (18,2), (36,1)\\n\\nNow we can match each of these factor pairs to corresponding values for (x, y): \\n\\n1. (1, 36) gives (7, 42)\\n2. (2, 18) gives (8, 24)\\n3. (3, 12) gives (9, 18)\\n4. (4, 9) gives (10, 15)\\n5. (6, 6) gives (12, 12)\\n6. (9, 4) gives (15, 10)\\n7. (12, 3) gives (18, 9)\\n8. (18, 2) gives (24, 8)\\n9. (36, 1) gives (42, 7)\\n\\nThus, we have found the following ordered pairs of positive integers (a, b): (7, 42), (8, 24), (9, 18), (10, 15), (12, 12), (15, 10), (18, 9), (24, 8), and (42, 7).\\n\\nCounting these, we find there are 9 unique ordered pairs of (a, b).\\n\\nTherefore, the total number of ordered pairs (a, b) which satisfy the equation is 9.",
+            "final_answer": "9",
+            "latency_seconds": 4.49,
+            "input_tokens": 110,
+            "output_tokens": 639,
+            "total_tokens": 749
+        }
+    },
+    {
+        "question_id": 5,
+        "question": "Two fair six-sided dice are rolled. Given that their sum is at least 10, what is the probability that the sum is even?",
+        "correct_answer": "2/3",
+        "reference_solution": "The possible sums at least 10 are 10, 11, and 12. They occur in 3, 2, and 1 outcomes respectively, for 6 equally likely outcomes. Even sums are 10 and 12, giving 3+1=4 outcomes. Probability = 4/6 = 2/3.",
+        "baseline_solution": {
+            "reasoning": "First, we need to determine all possible outcomes when two six-sided dice are rolled. The total combinations of outcomes (dice1, dice2) are (1,1), (1,2), ..., (6,6), giving us 36 possible combinations. \n\nNext, we find the outcomes where the sum of the dice is at least 10. The possible sums and their respective outcomes are: \n- Sum = 10: (4,6), (5,5), (6,4) \n- Sum = 11: (5,6), (6,5)\n- Sum = 12: (6,6) \n\nThus, the outcomes where the sum is at least 10 are: \n(4,6), (5,5), (6,4), (5,6), (6,5), (6,6). This gives us a total of 6 favorable outcomes. \n\nNext, we determine which of these outcomes have an even sum: \n- (4,6) gives 10 (even) \n- (5,5) gives 10 (even) \n- (6,4) gives 10 (even) \n- (5,6) gives 11 (odd) \n- (6,5) gives 11 (odd) \n- (6,6) gives 12 (even) \n\nThe outcomes with an even sum are: (4,6), (5,5), (6,4), and (6,6), which totals to 4 outcomes. \n\nNow, we can find the probability that the sum is even given that the sum is at least 10. The probability is given by:\nP(Even | Sum >= 10) = (Number of favorable outcomes for even)/(Total outcomes where sum >= 10) = 4/6 = 2/3.\n\nFinally, we simplify the fraction to get the final probability. Therefore, the final answer is 2/3.",
+            "final_answer": "2/3",
+            "latency_seconds": 3.41,
+            "input_tokens": 113,
+            "output_tokens": 447,
+            "total_tokens": 560
+        }
+    },
+    {
+        "question_id": 6,
+        "question": "Find the remainder when 7^100 is divided by 13.",
+        "correct_answer": "9",
+        "reference_solution": "Since 7^12 is congruent to 1 modulo 13 by Fermat's little theorem, 7^100 is congruent to 7^4 modulo 13. Now 7^2 = 49 is congruent to 10, so 7^4 is congruent to 100, which is congruent to 9 modulo 13.",
+        "baseline_solution": {
+            "reasoning": "To find the remainder of 7^100 when divided by 13, we can use Fermat's Little Theorem, which states that if p is a prime number and a is any integer not divisible by p, then a^(p-1) ≡ 1 (mod p). Here, p = 13 and a = 7. Since 7 is not divisible by 13, we apply the theorem: 7^(13-1) = 7^12 ≡ 1 (mod 13). Now, we want to reduce 7^100 modulo 13. First, we find the exponent modulo 12 (because of Fermat's theorem): 100 mod 12 = 4. This gives us 7^100 ≡ 7^4 (mod 13). Next, we calculate 7^4: 7^2 = 49. Now, we reduce this modulo 13: 49 mod 13 = 10. Then we compute 7^4 = (7^2)^2 = 10^2 = 100. Again, we reduce this modulo 13: 100 mod 13 = 9. Therefore, 7^100 ≡ 9 (mod 13). Thus, the remainder when 7^100 is divided by 13 is 9.",
+            "final_answer": "9",
+            "latency_seconds": 2.3,
+            "input_tokens": 99,
+            "output_tokens": 290,
+            "total_tokens": 389
+        }
+    },
+    {
+        "question_id": 7,
+        "question": "A convex polygon has 90 diagonals. How many sides does it have?",
+        "correct_answer": "15",
+        "reference_solution": "An n-gon has n(n-3)/2 diagonals. Set n(n-3)/2 = 90, giving n(n-3)=180 and n^2-3n-180=0. Factorization gives (n-15)(n+12)=0, so n=15.",
+        "baseline_solution": {
+            "reasoning": "The formula for the number of diagonals (D) in a convex polygon with n sides is given by: D = n(n - 3) / 2. We are given that D = 90, so we set up the equation: \\n(n - 3) / 2 = 90. \\nMultiplying both sides by 2, we get: \\nn(n - 3) = 180. \\nNow we can rearrange it to form a quadratic equation: \\nn^2 - 3n - 180 = 0. \\nNext, we will use the quadratic formula n = (-b ± √(b² - 4ac)) / 2a, where a = 1, b = -3, and c = -180. \\nCalculating the discriminant: b² - 4ac = (-3)² - 4(1)(-180) = 9 + 720 = 729. \\nNow we find the square root of the discriminant: √729 = 27. \\nNow we can substitute this back into the quadratic formula: \\nn = (3 ± 27) / 2. \\nCalculating the two possible values: \\n1) n = (30) / 2 = 15 and 2) n = (-24) / 2 = -12. \\nSince the number of sides (n) must be positive, we take n = 15. Thus, the convex polygon has 15 sides.",
+            "final_answer": "15",
+            "latency_seconds": 3.1,
+            "input_tokens": 101,
+            "output_tokens": 333,
+            "total_tokens": 434
+        }
+    },
+    {
+        "question_id": 8,
+        "question": "A 2 kg object starts from rest and is acted on by a constant net force of 6 N for 5 seconds. What are its final speed and the distance traveled?",
+        "correct_answer": "Final speed = 15 m/s; distance = 37.5 m",
+        "reference_solution": "Acceleration is F/m = 6/2 = 3 m/s^2. Starting from rest, v = at = 3*5 = 15 m/s. Distance is s = (1/2)at^2 = 0.5*3*25 = 37.5 m.",
+        "baseline_solution": {
+            "reasoning": "1. First, we need to calculate the acceleration of the object using Newton's second law, which states that Force = mass × acceleration (F = m * a). Therefore, we can rearrange the formula to find the acceleration: a = F / m. Given F = 6 N and m = 2 kg, we have a = 6 N / 2 kg = 3 m/s². \n\n2. Next, we will determine the final speed of the object after 5 seconds. The formula for final speed (v) when starting from rest is given by: v = u + at, where u is the initial speed (0 m/s), a is acceleration, and t is time. Here, u = 0 m/s, a = 3 m/s², and t = 5 s. Thus, v = 0 + (3 m/s² * 5 s) = 15 m/s. \n\n3. Now, we need to calculate the distance traveled by the object during that time. The formula to find distance (d) when starting from rest is: d = ut + (1/2)at². Using the values we have, u = 0 m/s, a = 3 m/s², and t = 5 s, we calculate: d = 0 * 5 + (1/2) * 3 m/s² * (5 s)² = 0 + (1/2) * 3 * 25 = (1.5 * 25) = 37.5 m. \n\n4. Therefore, the final speed of the object is 15 m/s, and the distance traveled is 37.5 m.",
+            "final_answer": "Final speed: 15 m/s, Distance traveled: 37.5 m",
+            "latency_seconds": 3.79,
+            "input_tokens": 121,
+            "output_tokens": 389,
+            "total_tokens": 510
+        }
+    },
+    {
+        "question_id": 9,
+        "question": "A projectile is launched horizontally from a height of 45 m with a horizontal speed of 20 m/s. Ignore air resistance and take g = 10 m/s^2. How far horizontally does it travel before hitting the ground?",
+        "correct_answer": "60 m",
+        "reference_solution": "Vertical motion gives 45 = (1/2)(10)t^2, so t^2=9 and t=3 s. Horizontal distance is x=20*3=60 m.",
+        "baseline_solution": {
+            "reasoning": "To solve the problem, we first need to determine how long the projectile is in the air before it hits the ground. We can use the formula for the time of free fall from a height 'h': t = sqrt(2h/g), where 'h' is the height (45 m) and 'g' is the acceleration due to gravity (10 m/s^2). \n\nStep 1: Calculate the time of flight. \n- h = 45 m \n- g = 10 m/s^2 \n\nUsing the formula: t = sqrt(2 * h / g) = sqrt(2 * 45 / 10) = sqrt(9) = 3 seconds. \n\nStep 2: Calculate the horizontal distance traveled during the time of flight. \nThe horizontal distance 'd' can be calculated using the formula: d = horizontal speed * time. \n- Horizontal speed = 20 m/s \n- Time = 3 seconds \n\nSo, d = 20 * 3 = 60 meters. \n\nThus, the projectile travels 60 meters horizontally before hitting the ground.",
+            "final_answer": "60 meters",
+            "latency_seconds": 2.35,
+            "input_tokens": 132,
+            "output_tokens": 256,
+            "total_tokens": 388
+        }
+    },
+    {
+        "question_id": 10,
+        "question": "A 4 ohm resistor and a 6 ohm resistor are connected in parallel to a 12 V ideal battery. What is the total current supplied by the battery?",
+        "correct_answer": "5 A",
+        "reference_solution": "For parallel resistors, 1/R = 1/4 + 1/6 = 5/12, so R = 12/5 = 2.4 ohms. Total current is I=V/R=12/2.4=5 A.",
+        "baseline_solution": {
+            "reasoning": "To find the total current supplied by the battery, we first need to determine the equivalent resistance of the parallel resistors. The formula for the total resistance (R_total) of resistors in parallel is given by: 1/R_total = 1/R1 + 1/R2, where R1 = 4 ohms and R2 = 6 ohms. We can calculate it as follows: 1/R_total = 1/4 + 1/6. To find a common denominator, we can use 12: \n1/4 = 3/12 and 1/6 = 2/12. \nNow, we can add these fractions: 1/R_total = 3/12 + 2/12 = 5/12. \nThus, R_total = 12/5 ohms, which simplifies to 2.4 ohms. \nNext, we will use Ohm's Law (V = IR) to find the total current (I) supplied by the battery. Rearranging gives us I = V/R. \nSubstituting the values: I = 12 V / (12/5 ohms). This simplifies to I = 12 V * (5/12) = 5 A. \nTherefore, the total current supplied by the battery is 5 Amperes.",
+            "final_answer": "5 A",
+            "latency_seconds": 2.86,
+            "input_tokens": 120,
+            "output_tokens": 298,
+            "total_tokens": 418
+        }
+    },
+    {
+        "question_id": 11,
+        "question": "A 0.5 kg block slides from rest down a frictionless track from a height of 5 m. Take g = 10 m/s^2. What is its speed at the bottom?",
+        "correct_answer": "10 m/s",
+        "reference_solution": "Conservation of mechanical energy gives mgh = (1/2)mv^2. Thus v = sqrt(2gh) = sqrt(2*10*5) = 10 m/s.",
+        "baseline_solution": {
+            "reasoning": "To find the speed of the block at the bottom of the track, we can use the principle of conservation of energy. Initially, the block has potential energy (PE) due to its height and no kinetic energy (KE) since it starts from rest. At the bottom of the track, all the potential energy converts into kinetic energy. 1. Calculate the initial potential energy at the height of 5 m: PE_initial = m * g * h = 0.5 kg * 10 m/s^2 * 5 m = 25 J. 2. The kinetic energy at the bottom when the block is at its maximum speed is given by KE = (1/2) * m * v^2. 3. Setting the potential energy equal to the kinetic energy gives us 25 J = (1/2) * 0.5 kg * v^2. 4. Simplifying this equation: 25 = 0.25 * v^2. 5. Now, solving for v^2: v^2 = 25 / 0.25 = 100. 6. Taking the square root to find v: v = sqrt(100) = 10 m/s.",
+            "final_answer": "10 m/s",
+            "latency_seconds": 2.43,
+            "input_tokens": 126,
+            "output_tokens": 268,
+            "total_tokens": 394
+        }
+    },
+    {
+        "question_id": 12,
+        "question": "A gas occupies 2 L at 300 K at constant pressure. If its temperature increases to 450 K, what volume will it occupy?",
+        "correct_answer": "3 L",
+        "reference_solution": "At constant pressure, V/T is constant. Therefore V2 = V1*T2/T1 = 2*(450/300) = 3 L.",
+        "baseline_solution": {
+            "reasoning": "We can use Charles's Law, which states that at constant pressure, the volume of a gas is directly proportional to its temperature (in Kelvin). The equation can be written as: V1/T1 = V2/T2, where V1 is the initial volume, T1 is the initial temperature, V2 is the final volume, and T2 is the final temperature. We know: V1 = 2 L, T1 = 300 K, and T2 = 450 K. We need to find V2. Rearranging the equation gives us: V2 = V1 * (T2/T1). Substituting the known values into the equation gives us: V2 = 2 L * (450 K / 300 K). This simplifies to: V2 = 2 L * 1.5 = 3 L. Therefore, the volume occupied by the gas at 450 K is 3 L.",
+            "final_answer": "3 L",
+            "latency_seconds": 2.39,
+            "input_tokens": 114,
+            "output_tokens": 209,
+            "total_tokens": 323
+        }
+    },
+    {
+        "question_id": 13,
+        "question": "A photon has wavelength 600 nm. Using h = 6.626e-34 J*s and c = 3.00e8 m/s, calculate its energy in joules.",
+        "correct_answer": "Approximately 3.31e-19 J",
+        "reference_solution": "Use E=hc/lambda. With lambda=600 nm=6.00e-7 m, E=(6.626e-34*3.00e8)/(6.00e-7) = 3.313e-19 J.",
+        "baseline_solution": {
+            "reasoning": "To find the energy of a photon, we can use the formula: E = h * c / λ, where E is the energy, h is Planck's constant, c is the speed of light, and λ is the wavelength. We are given: h = 6.626e-34 J*s, c = 3.00e8 m/s, and λ = 600 nm. First, we need to convert the wavelength from nanometers to meters: 600 nm = 600e-9 m. Now we can substitute these values into the formula: E = (6.626e-34 J*s * 3.00e8 m/s) / (600e-9 m). Next, we calculate the numerator: 6.626e-34 J*s * 3.00e8 m/s = 1.9878e-25 J*m. Now, we divide this by 600e-9 m: E = 1.9878e-25 J*m / 600e-9 m = 3.313 J. Thus, the energy of the photon is approximately 3.313 J.",
+            "final_answer": "3.313",
+            "latency_seconds": 2.05,
+            "input_tokens": 124,
+            "output_tokens": 255,
+            "total_tokens": 379
+        }
+    },
+    {
+        "question_id": 14,
+        "question": "Five people A, B, C, D, and E stand in a line. A is somewhere to the left of B. C is immediately to the right of D. E is not at either end. If D is in position 2, what is the complete order?",
+        "correct_answer": "A D C E B",
+        "reference_solution": "D is position 2 and C is immediately right of D, so C is position 3. E cannot be at an end, so E must be position 4. The remaining positions are 1 and 5 for A and B. Since A is left of B, A=1 and B=5.",
+        "baseline_solution": {
+            "reasoning": "1. We know that D is in position 2. Therefore, the lineup starts with _ D _ _ _.  \n2. C is immediately to the right of D, which means C is in position 3. Now the lineup is _ D C _ _.  \n3. A is somewhere to the left of B. This means A can either be in position 1, or if A were in position 2 or 3, it wouldn't satisfy 'A is left of B'.  \n4. Since D is already in position 2 and C is in position 3, the only position A can occupy is position 1. So, A is in position 1. The lineup looks like A D C _ _.  \n5. E cannot be at either end (position 1 or 5). The only position left is position 4, which means E is in position 4, and the final position 5 must be B.  \n6. Thus, the complete order is A D C E B.",
+            "final_answer": "A D C E B",
+            "latency_seconds": 2.25,
+            "input_tokens": 141,
+            "output_tokens": 236,
+            "total_tokens": 377
+        }
+    },
+    {
+        "question_id": 15,
+        "question": "Four people A, B, C, and D each own exactly one of four pets: cat, dog, fish, or bird. A does not own the cat or dog. B owns neither the bird nor fish. C does not own the dog. D owns the fish. What pet does each person own?",
+        "correct_answer": "A=bird, B=cat, C=dog, D=fish",
+        "reference_solution": "D=fish. B cannot be bird or fish, so B must be cat or dog. A cannot be cat or dog, and fish is taken, so A=bird. Therefore B cannot be bird or fish and must be cat. C then gets dog.",
+        "baseline_solution": {
+            "reasoning": "Let's analyze the given information step by step:\n1. From the problem statement, we know that four pets (cat, dog, fish, bird) are owned by four individuals (A, B, C, D).\n\n2. Given A does not own the cat or dog, the only possibilities for A are the fish or the bird.\n   - A cannot own: cat (1), dog (2)\n   - Remaining options for A: fish or bird\n\n3. It is stated that D owns the fish. Thus, A cannot own the fish. Therefore, A must own the bird.\n   - A = bird \n\n4. Now we know: A = bird, D = fish. \n   - We are left with the cat and the dog for B and C.\n\n5. Next, we know B owns neither the bird nor the fish (which we already identified), so B must own the cat or the dog.\n   - Since A owns the bird and D owns the fish, the only remaining pets for B are cat or dog.\n\n6. Since we are left with the dog and cat, and it is stated that C does not own the dog, C must own the cat.\n   - Therefore, C = cat.\n\n7. This leaves B with the only remaining option, which is the dog.\n   - That is, B = dog.\n\n8. Summarizing the findings: A = bird, B = dog, C = cat, D = fish.",
+            "final_answer": "{ 'A': 'bird', 'B': 'dog', 'C': 'cat', 'D': 'fish' }",
+            "latency_seconds": 3.18,
+            "input_tokens": 148,
+            "output_tokens": 359,
+            "total_tokens": 507
+        }
+    },
+    {
+        "question_id": 16,
+        "question": "There are exactly three boxes: red, blue, and green. Exactly one contains gold. The labels are all wrong. The red box says 'gold is in the red box', the blue box says 'gold is in the red box', and the green box says 'gold is not in the blue box'. Which box contains the gold?",
+        "correct_answer": "Blue box",
+        "reference_solution": "All labels are false. If gold were in red, both the red and blue statements would be true, impossible. If gold were in green, the green statement would be false? The green statement says gold is not in blue, which would be true, impossible. Therefore gold must be in blue. Then red statement is false, blue statement is false, and green statement is false.",
+        "baseline_solution": {
+            "reasoning": "We know that all the labels are wrong. Let's analyze the statements one by one: 1. The red box says 'gold is in the red box'. Since it's labeled incorrectly, gold cannot be in the red box. 2. The blue box says 'gold is in the red box'. Since this label is also incorrect, gold cannot be in the red box either. 3. The green box says 'gold is not in the blue box', which means that this statement must be false. Thus, gold must be in the blue box. As a result, the gold must be in the blue box since the red box cannot contain it, and the statement of the green box is incorrect.",
+            "final_answer": "blue",
+            "latency_seconds": 1.54,
+            "input_tokens": 153,
+            "output_tokens": 157,
+            "total_tokens": 310
+        }
+    },
+    {
+        "question_id": 17,
+        "question": "Six books A, B, C, D, E, and F are arranged on a shelf. A must be before D. B must be immediately before C. E must be after D. F cannot be first. If B is in position 3, what is the only possible order?",
+        "correct_answer": "A D B C E F",
+        "reference_solution": "B=3 and C=4. A must be before D, and E must be after D. The remaining positions 1,2,5,6 contain A,D,E,F. A must be before D, and E after D, while F cannot be first. The only arrangement satisfying all constraints is A,D,B,C,E,F.",
+        "baseline_solution": {
+            "reasoning": "We need to determine the arrangement of the six books A, B, C, D, E, and F under the given constraints. Let's summarize the constraints: 1) A must be before D. 2) B must be immediately before C. 3) E must be after D. 4) F cannot be first. 5) B is in position 3. Since B is in position 3, this means C is in position 4 (due to B being immediately before C). So far, we have: _ _ B C _ _. Now we can insert A, D, E, and F into positions 1, 2, 5, and 6. Since F cannot be first, the only possible positions for F are 5 or 6. Let's examine those cases: - If F is in position 5, A and D must occupy positions 1 and 2, respectively. This means we could have A D B C F, but this violates the rule that E must be after D because there is no position for E left. - If F is in position 6, A and D must again occupy positions 1 and 2. This could lead to the arrangement A D B C F, but again, with E needing to be after D, the only feasible arrangement becomes: A D B C E F. Here, A is before D, B is before C, E is after D, and F is not first. Therefore, the only possible order is: A, D, B, C, E, F.",
+            "final_answer": "A D B C E F",
+            "latency_seconds": 2.8,
+            "input_tokens": 144,
+            "output_tokens": 342,
+            "total_tokens": 486
+        }
+    },
+    {
+        "question_id": 18,
+        "question": "Exactly one of four statements is true: (1) A is true, (2) B is true, (3) A and B are both true, (4) A and B are both false. Which pair of truth values for A and B satisfies this condition?",
+        "correct_answer": "A=false, B=false",
+        "reference_solution": "If A=false and B=false, statements 1, 2, and 3 are false, while statement 4 is true, so exactly one statement is true. Other assignments make at least two statements true or make the condition fail.",
+        "baseline_solution": {
+            "reasoning": "Let's analyze the statements one by one:  \n\n1. If A is true, then the first statement is true.  \n   - This implies B has to be false, because if B were true, the third statement \"A and B are both true\" would also be true, leading to two true statements (1 and 3).  \n   - Hence, if A is true, we have:  \n       - Statement 1: True  \n       - Statement 2: False  \n       - Statement 3: False  \n       - Statement 4: False  \n   - This leads to only one true statement, which is consistent.  \n\n2. If B is true, then the second statement is true.  \n   - Therefore, A must be false, because if A were true, statement 3 would also be true, again resulting in two true statements (2 and 3).  \n   - Consequently, this situation yields:  \n       - Statement 1: False  \n       - Statement 2: True  \n       - Statement 3: False  \n       - Statement 4: False  \n   - This also results in only one true statement, which is consistent.  \n\n3. If A and B are both true, then statement 3 would necessarily be true.  \n   - This means that both statements 1 and 3 are true, leading to two true statements (1 and 3).  \n   - This contradicts the condition that only one statement is true.  \n\n4. If A and B are both false, then statement 4 would be true, making statements 1, 2, and 3 false.  \n   - This means that statement 4 is the only true statement, which fits the requirement of having exactly one true statement.  \n\nWe need to summarize this:  \n- If A is true: Only statement 1 is true.  \n- If B is true: Only statement 2 is true.  \n- If A and B are both true: Two statements are true.  \n- If A and B are both false: Only statement 4 is true.  \n\nThus, the pairs (A, B) that satisfy the conditions are:  \n1. A = True, B = False  \n2. A = False, B = True  \n3. A = False, B = False.  \nConsidering the requirement of 'exactly one statement being true', we conclude that: A = False, B = False is the only situation where one statement is true (the fourth one).  \n\nTherefore, the pair of truth values (A, B) that satisfies the given condition is (False, False).",
+            "final_answer": "(False, False)",
+            "latency_seconds": 6.0,
+            "input_tokens": 140,
+            "output_tokens": 621,
+            "total_tokens": 761
+        }
+    },
+    {
+        "question_id": 19,
+        "question": "A code consists of three distinct digits chosen from 1, 2, 3, 4, and 5. The first digit is smaller than the second, and the second digit is smaller than the third. How many valid codes are possible?",
+        "correct_answer": "10",
+        "reference_solution": "Because the digits must be distinct and strictly increasing, each valid code corresponds to choosing any 3 of the 5 digits. Thus the number is C(5,3)=10.",
+        "baseline_solution": {
+            "reasoning": "To solve the problem, we want to choose 3 distinct digits from the set {1, 2, 3, 4, 5}. The three digits must satisfy the condition that the first digit is smaller than the second and the second is smaller than the third. Since the digits must be distinct and already ordered, this is equivalent to finding the number of combinations of 3 digits from 5. The number of ways to choose 3 distinct elements from a set of n elements is given by the combination formula C(n, k) = n! / (k! * (n-k)!), where n is the total number of items to choose from, k is the number of items to choose. In this case, n = 5 and k = 3. Hence, we calculate C(5, 3): C(5, 3) = 5! / (3! * (5-3)!) = 5! / (3! * 2!) = (5*4)/(2*1) = 10. Therefore, there are 10 valid combinations of digits where the digits are distinct and in ascending order.",
+            "final_answer": "10",
+            "latency_seconds": 2.25,
+            "input_tokens": 136,
+            "output_tokens": 253,
+            "total_tokens": 389
+        }
+    },
+    {
+        "question_id": 20,
+        "question": "Consider the Prisoner's Dilemma with payoffs (3,3) for mutual cooperation, (0,5) if player 1 cooperates and player 2 defects, (5,0) if player 1 defects and player 2 cooperates, and (1,1) for mutual defection. What is the unique pure-strategy Nash equilibrium?",
+        "correct_answer": "Both players defect",
+        "reference_solution": "For each player, defecting gives a higher payoff regardless of the opponent's action: 5>3 if the opponent cooperates, and 1>0 if the opponent defects. Therefore defection is strictly dominant for both players, giving the unique Nash equilibrium (Defect, Defect).",
+        "baseline_solution": {
+            "reasoning": "In the Prisoner's Dilemma, we analyze the strategies of both players and their respective payoffs. The payoffs are as follows: (3,3) for mutual cooperation, (0,5) if player 1 cooperates and player 2 defects, (5,0) if player 1 defects and player 2 cooperates, and (1,1) for mutual defection. To identify the unique pure-strategy Nash equilibrium, we evaluate the best responses of each player. If player 1 cooperates, player 2's best response is to defect, yielding a payoff of 5 instead of 3. Conversely, if player 1 defects, player 2's best response is to defect as well, giving them a payoff of 1 instead of 0. Analyzing player 1, if player 2 cooperates, player 1's best response is to defect (5 instead of 3). If player 2 defects, player 1's best response is also to defect (1 instead of 0). Therefore, when both players choose to defect, yielding a payoff of (1,1), neither player would benefit from unilaterally changing their strategy. Hence, (1,1) is the unique pure-strategy Nash equilibrium.",
+            "final_answer": "(1,1)",
+            "latency_seconds": 2.25,
+            "input_tokens": 159,
+            "output_tokens": 279,
+            "total_tokens": 438
+        }
+    },
+    {
+        "question_id": 21,
+        "question": "In a zero-sum game, the row player's payoff matrix is [[2, -1], [-2, 3]]. Does the game have a pure-strategy saddle point? If so, give the saddle point and game value.",
+        "correct_answer": "No. There is no pure-strategy saddle point.",
+        "reference_solution": "Row minima are -1 and -2, so the row player's maximin is -1. Column maxima are 2 and 3, so the minimax is 2. Since maximin (-1) is not equal to minimax (2), there is no pure-strategy saddle point.",
+        "baseline_solution": {
+            "reasoning": "To determine whether the zero-sum game has a pure-strategy saddle point, we need to analyze the given payoff matrix for the row player. The matrix is: [[2, -1], [-2, 3]]. A saddle point exists if the minimum of the row maxima is equal to the maximum of the column minima.\n\n1. Identify the maximum values in each row:\n   - Row 1: maximum of [2, -1] is 2.\n   - Row 2: maximum of [-2, 3] is 3.\n\n2. Identify the minimum values in each column:\n   - Column 1: minimum of [2, -2] is -2.\n   - Column 2: minimum of [-1, 3] is -1.\n\n3. Now we compare the maximum of the row maxima (which is 3) to the minimum of the column minima (which is -2).\n   - The maximum row maxima is 3, and the minimum column minima is -2.\n\n4. The saddle point occurs if the maximum row maximum equals the minimum column minimum. Since 3 is not equal to -2, there is no saddle point in this game.\n\nConclusively, since we found that there is no saddle point, we can state that there are no saddle points in this game.",
+            "final_answer": "No, there is no pure-strategy saddle point.",
+            "latency_seconds": 2.66,
+            "input_tokens": 132,
+            "output_tokens": 309,
+            "total_tokens": 441
+        }
+    },
+    {
+        "question_id": 22,
+        "question": "Two players simultaneously choose Left or Right. Player 1's payoff is 2 if their choices match and 0 otherwise. Player 2's payoff is 1 if their choices match and 0 otherwise. What are the pure-strategy Nash equilibria?",
+        "correct_answer": "(Left, Left) and (Right, Right)",
+        "reference_solution": "When both choose Left, neither player gains by switching alone because switching causes a mismatch and reduces their payoff to 0. The same is true when both choose Right. Therefore both matching outcomes are pure-strategy Nash equilibria.",
+        "baseline_solution": {
+            "reasoning": "To find the pure-strategy Nash equilibria for this game, we start by examining the payoff matrix for the two players' strategies.\n\nLet Player 1's strategies be: L (Left) and R (Right).\nLet Player 2's strategies be: L (Left) and R (Right).\n\nThe payoff matrix can be constructed as follows:\n\n              | Player 2: L | Player 2: R |\n  ----------------------------------------\n  Player 1: L | (2, 1)      | (0, 0)     |\n  Player 1: R | (0, 0)      | (2, 1)     |\n\nNow, let's analyze the Nash equilibria.\n\n1. If Player 1 chooses L:\n   - If Player 2 chooses L, Player 1 gets 2 and Player 2 gets 1. This is a best response for both players.\n   - If Player 2 chooses R, Player 1 gets 0 and Player 2 gets 0. Player 1 prefers L since 2 > 0, so Player 2 choosing R is not a best response.\n   So, (L, L) is a Nash equilibrium.\n\n2. If Player 1 chooses R:\n   - If Player 2 chooses L, Player 1 gets 0 and Player 2 gets 0. Player 1 will choose R since they prefer 2 over 0. However, Player 2 does not prefer R since their payoff would be 0.\n   - If Player 2 chooses R, Player 1 gets 2 and Player 2 gets 1. This is a best response for both players.\n   So, (R, R) is also a Nash equilibrium.\n\nIn conclusion, the pure-strategy Nash equilibria for this game are (L, L) and (R, R).",
+            "final_answer": "[\"(L, L)\", \"(R, R)\"]",
+            "latency_seconds": 3.72,
+            "input_tokens": 137,
+            "output_tokens": 433,
+            "total_tokens": 570
+        }
+    },
+    {
+        "question_id": 23,
+        "question": "In the matching-pennies zero-sum game, Player 1 wins 1 if the two choices match and loses 1 otherwise. Player 2 receives the opposite payoff. What is the mixed-strategy Nash equilibrium?",
+        "correct_answer": "Both players choose Heads with probability 1/2 and Tails with probability 1/2.",
+        "reference_solution": "To make Player 1 indifferent between Heads and Tails, Player 2 must choose Heads and Tails with equal probability. The same argument applies to Player 2. Therefore both randomize uniformly: (1/2,1/2).",
+        "baseline_solution": {
+            "reasoning": "In the matching pennies game, we have two players: Player 1 and Player 2. Player 1 can choose heads (H) or tails (T), and Player 2 also chooses heads or tails. The payoffs for Player 1 are as follows: if both players choose H, Player 1 wins (+1); if Player 1 chooses H and Player 2 chooses T, Player 1 loses (-1); if Player 1 chooses T and Player 2 chooses H, Player 1 loses (-1); if both choose T, Player 1 wins (+1). The payoff matrix can be summarized as follows: Player 2: H | T Player 1: H | 1 | -1 T | -1 | 1. To find the mixed-strategy Nash equilibrium, let Player 1 mix strategies with probabilities p for H and (1-p) for T. Player 2 will mix with probabilities q for H and (1-q) for T. Player 1's expected payoff playing H is: E(H) = q * 1 + (1-q) * -1 = 2q - 1, and the expected payoff playing T is: E(T) = q * -1 + (1-q) * 1 = -2q + 1. To make Player 1 indifferent, we set E(H) = E(T): 2q - 1 = -2q + 1. Solving this, we have 4q = 2; thus, q = 0.5. Thus, Player 2 chooses H with probability 0.5 and T with probability 0.5. Similarly, for Player 2's side, the expected payout for Player 2 from their choices should also equalize. Analyzing Player 1's expected payoffs leads to the same equilibrium probabilities for Player 1 as well. In conclusion, both players randomizing their strategies at H and T equally (0.5 for H and 0.5 for T) leads to the mixed-strategy Nash equilibrium.",
+            "final_answer": "Both players choose heads and tails with probabilities 0.5 each.",
+            "latency_seconds": 3.99,
+            "input_tokens": 130,
+            "output_tokens": 452,
+            "total_tokens": 582
+        }
+    },
+    {
+        "question_id": 24,
+        "question": "Consider the payoff matrix for a zero-sum game: [[4, 0], [2, 3]]. Player 1 maximizes the payoff and Player 2 minimizes it. What is the value of the game if both players may use mixed strategies?",
+        "correct_answer": "12/5 = 2.4",
+        "reference_solution": "Let Player 1 choose row 1 with probability p. The expected payoff against column 1 is 4p+2(1-p)=2+2p. Against column 2 it is 0p+3(1-p)=3-3p. Equalize them: 2+2p=3-3p, giving p=1/5. The value is 2+2/5=12/5.",
+        "baseline_solution": {
+            "reasoning": "To find the value of the game using mixed strategies, we first analyze the payoff matrix \\[ A = \\begin{bmatrix} 4 & 0 \\\\ 2 & 3 \\end{bmatrix} \\]. Player 1 wants to maximize their minimum payoff, while Player 2 wants to minimize the maximum loss. \n\nLet Player 1 choose probabilities \\[ p_1 \\] and \\[ p_2 \\] for their strategies, where 0 <= \\[ p_1 \\] <= 1 for strategy 1 and 0 <= \\[ p_2 \\] <= 1 for strategy 2, satisfying \\[ p_1 + p_2 = 1 \\]. Let \\[ V \\] be the value of the game to Player 1. The expected payoff for Player 1 when choosing strategy 1 with probability \\[ p_1 \\] and strategy 2 with probability \\[ p_2 \\] is given by: \n\n\\[ E(P1) = 4 p_1 + 2 p_2 \\] \\[ E(P1) = 4 p_1 + 2 (1 - p_1) = 4p_1 + 2 - 2p_1 = 2p_1 + 2 \\] \n\nFor Player 1 to maximize their minimum payoff, we analyze the worst situation for Player 1 using Player 2's strategies. \n\nLet Player 2 also use probabilities \\[ q_1 \\] and \\[ q_2 \\] for their strategies, where 0 <= \\[ q_1 \\] <= 1 for strategy 1 and 0 <= \\[ q_2 \\] <= 1 for strategy 2 (also satisfying \\[ q_1 + q_2 = 1 \\]). The expected losses when Player 2 chooses strategies are: \n\\[ E(P2) = 0 q_1 + 3 q_2 = 3q_2 \\] for strategy 2; and \\[ E(P2) = 4 q_1 + 2 q_2 = 4q_1 + 2(1 - q_1) = 2 + 2q_1 \\]. \n\nTo find the equilibrium, we set the expected payoffs equal for both players: \n\\[ 4p_1 + 0p_2 \\] \\[ = 2p_1 + 2(1 - p_1) = 2p_1 + 2 - 2p_1 = 2 \\] \n\\[ = 3q_1 + 0 q_2 \\] \n\\[ => 2 = 3q_2 \\] \n\\[ => (p_1 and p_2) and (q_1 and q_2) can be solved yielding probabilities. \n\nOn solving we find that both players are indifferent between strategies yielding (p1, p2) as (0.25, 0.75) for Player 1 meaning the payoff expected value. \n\nWe finalize finding the values and find the mixed strategy yielding a fixed value of: \\[ V = 2.5 \\].",
+            "final_answer": "2.5",
+            "latency_seconds": 5.29,
+            "input_tokens": 137,
+            "output_tokens": 704,
+            "total_tokens": 841
+        }
+    },
+    {
+        "question_id": 25,
+        "question": "Two firms simultaneously choose High Price or Low Price. Their payoffs are: (High, High)=(4,4), (High, Low)=(1,6), (Low, High)=(6,1), and (Low, Low)=(2,2). What is the unique pure-strategy Nash equilibrium?",
+        "correct_answer": "Both choose Low Price",
+        "reference_solution": "For either firm, Low Price gives a higher payoff regardless of the other firm's choice: 6>4 when the other chooses High, and 2>1 when the other chooses Low. Thus Low Price is strictly dominant for both firms, so the unique pure-strategy Nash equilibrium is (Low, Low).",
+        "baseline_solution": {
+            "reasoning": "To find the Nash equilibrium, we must examine the payoffs for each firm based on the strategies they can choose, i.e., High Price or Low Price. We have the following payoff matrix: \n\n                      Firm B\n                High           Low\n        ---------------------\n   Firm A  High | (4, 4)      (1, 6)  \n                Low  | (6, 1)      (2, 2)  \n\nNext, we analyze the best responses for each firm:\n\n1. If Firm B chooses High Price, Firm A will choose between:\n   - High Price: payoff is 4 \n   - Low Price: payoff is 6 \n   Since 6 > 4, Firm A's best response to B choosing High is Low.\n\n2. If Firm B chooses Low Price, Firm A will choose between:\n   - High Price: payoff is 1 \n   - Low Price: payoff is 2 \n   Since 2 > 1, Firm A's best response to B choosing Low is Low.\n\nSo, Firm A's best response is Low regardless of what Firm B does. \n\nNow let's analyze Firm B's choices:\n\n1. If Firm A chooses High Price, Firm B will choose between:\n   - High Price: payoff is 4 \n   - Low Price: payoff is 6 \n   Since 6 > 4, Firm B's best response to A choosing High is Low.\n\n2. If Firm A chooses Low Price, Firm B will choose between:\n   - High Price: payoff is 1 \n   - Low Price: payoff is 2 \n   Since 2 > 1, Firm B's best response to A choosing Low is Low.\n\nThus, Firm B’s best response is also Low regardless of Firm A's choice. \n\nFrom this analysis, the resulting strategy pair is (Low, Low), which yields the payoff of (2, 2) for both firms. No firm has an incentive to unilaterally deviate from the strategy Low given the other's choice of Low. \n\nTherefore, the unique pure-strategy Nash equilibrium in this game is (Low, Low).",
+            "final_answer": "(Low, Low)",
+            "latency_seconds": 4.1,
+            "input_tokens": 151,
+            "output_tokens": 493,
+            "total_tokens": 644
+        }
+    }
+]

@@ -1,0 +1,415 @@
+[
+    {
+        "question_id": 1,
+        "question": "A sequence is defined by a_1 = 2 and a_(n+1) = 3a_n + 2 for n >= 1. Find a_8.",
+        "correct_answer": "6560",
+        "solver_answers": [
+            "6560",
+            "6560",
+            "6560"
+        ],
+        "answer_counts": {
+            "6560": 3
+        },
+        "majority_answer": "6560",
+        "is_correct": true
+    },
+    {
+        "question_id": 2,
+        "question": "How many 5-digit positive integers have five distinct digits and are divisible by 5?",
+        "correct_answer": "5712",
+        "solver_answers": [
+            "5712",
+            "5040",
+            "5712"
+        ],
+        "answer_counts": {
+            "5712": 2,
+            "5040": 1
+        },
+        "majority_answer": "5712",
+        "is_correct": true
+    },
+    {
+        "question_id": 3,
+        "question": "Let x be a nonzero real number satisfying x + 1/x = 3. Find x^5 + 1/x^5.",
+        "correct_answer": "123",
+        "solver_answers": [
+            "123",
+            "47",
+            "144"
+        ],
+        "answer_counts": {
+            "123": 1,
+            "47": 1,
+            "144": 1
+        },
+        "majority_answer": "123",
+        "is_correct": true
+    },
+    {
+        "question_id": 4,
+        "question": "How many ordered pairs of positive integers (a,b) satisfy 1/a + 1/b = 1/6?",
+        "correct_answer": "9",
+        "solver_answers": [
+            "9",
+            "9",
+            "9"
+        ],
+        "answer_counts": {
+            "9": 3
+        },
+        "majority_answer": "9",
+        "is_correct": true
+    },
+    {
+        "question_id": 5,
+        "question": "Two fair six-sided dice are rolled. Given that their sum is at least 10, what is the probability that the sum is even?",
+        "correct_answer": "2/3",
+        "solver_answers": [
+            "2/3",
+            "1/2",
+            "2/3"
+        ],
+        "answer_counts": {
+            "2/3": 2,
+            "1/2": 1
+        },
+        "majority_answer": "2/3",
+        "is_correct": true
+    },
+    {
+        "question_id": 6,
+        "question": "Find the remainder when 7^100 is divided by 13.",
+        "correct_answer": "9",
+        "solver_answers": [
+            "9",
+            "9",
+            "9"
+        ],
+        "answer_counts": {
+            "9": 3
+        },
+        "majority_answer": "9",
+        "is_correct": true
+    },
+    {
+        "question_id": 7,
+        "question": "A convex polygon has 90 diagonals. How many sides does it have?",
+        "correct_answer": "15",
+        "solver_answers": [
+            "15",
+            "15",
+            "15"
+        ],
+        "answer_counts": {
+            "15": 3
+        },
+        "majority_answer": "15",
+        "is_correct": true
+    },
+    {
+        "question_id": 8,
+        "question": "A 2 kg object starts from rest and is acted on by a constant net force of 6 N for 5 seconds. What are its final speed and the distance traveled?",
+        "correct_answer": "Final speed = 15 m/s; distance = 37.5 m",
+        "solver_answers": [
+            "Final speed: 15 m/s, Distance traveled: 37.5 m",
+            "Final speed: 15 m/s, Distance traveled: 37.5 m",
+            "Final speed: 15 m/s, Distance traveled: 37.5 m"
+        ],
+        "answer_counts": {
+            "final speed: 15 m/s, distance traveled: 37.5 m": 3
+        },
+        "majority_answer": "Final speed: 15 m/s, Distance traveled: 37.5 m",
+        "is_correct": false
+    },
+    {
+        "question_id": 9,
+        "question": "A projectile is launched horizontally from a height of 45 m with a horizontal speed of 20 m/s. Ignore air resistance and take g = 10 m/s^2. How far horizontally does it travel before hitting the ground?",
+        "correct_answer": "60 m",
+        "solver_answers": [
+            "60 m",
+            "60 meters",
+            "60 meters"
+        ],
+        "answer_counts": {
+            "60 m": 1,
+            "60 meters": 2
+        },
+        "majority_answer": "60 meters",
+        "is_correct": false
+    },
+    {
+        "question_id": 10,
+        "question": "A 4 ohm resistor and a 6 ohm resistor are connected in parallel to a 12 V ideal battery. What is the total current supplied by the battery?",
+        "correct_answer": "5 A",
+        "solver_answers": [
+            "5 A",
+            "5 A",
+            "5 A"
+        ],
+        "answer_counts": {
+            "5 a": 3
+        },
+        "majority_answer": "5 A",
+        "is_correct": true
+    },
+    {
+        "question_id": 11,
+        "question": "A 0.5 kg block slides from rest down a frictionless track from a height of 5 m. Take g = 10 m/s^2. What is its speed at the bottom?",
+        "correct_answer": "10 m/s",
+        "solver_answers": [
+            "10 m/s",
+            "10 m/s"
+        ],
+        "answer_counts": {
+            "10 m/s": 2
+        },
+        "majority_answer": "10 m/s",
+        "is_correct": true
+    },
+    {
+        "question_id": 12,
+        "question": "A gas occupies 2 L at 300 K at constant pressure. If its temperature increases to 450 K, what volume will it occupy?",
+        "correct_answer": "3 L",
+        "solver_answers": [
+            "3 L",
+            "3 L",
+            "3 L"
+        ],
+        "answer_counts": {
+            "3 l": 3
+        },
+        "majority_answer": "3 L",
+        "is_correct": true
+    },
+    {
+        "question_id": 13,
+        "question": "A photon has wavelength 600 nm. Using h = 6.626e-34 J*s and c = 3.00e8 m/s, calculate its energy in joules.",
+        "correct_answer": "Approximately 3.31e-19 J",
+        "solver_answers": [
+            "3.31e-19 J",
+            "3.313e-19 J",
+            "3.313e-19 J"
+        ],
+        "answer_counts": {
+            "3.31e-19 j": 1,
+            "3.313e-19 j": 2
+        },
+        "majority_answer": "3.313e-19 J",
+        "is_correct": false
+    },
+    {
+        "question_id": 14,
+        "question": "Five people A, B, C, D, and E stand in a line. A is somewhere to the left of B. C is immediately to the right of D. E is not at either end. If D is in position 2, what is the complete order?",
+        "correct_answer": "A D C E B",
+        "solver_answers": [
+            "A D C E B",
+            "A, D, C, E, B",
+            "A D C E B"
+        ],
+        "answer_counts": {
+            "a d c e b": 2,
+            "a, d, c, e, b": 1
+        },
+        "majority_answer": "A D C E B",
+        "is_correct": true
+    },
+    {
+        "question_id": 15,
+        "question": "Four people A, B, C, and D each own exactly one of four pets: cat, dog, fish, or bird. A does not own the cat or dog. B owns neither the bird nor fish. C does not own the dog. D owns the fish. What pet does each person own?",
+        "correct_answer": "A=bird, B=cat, C=dog, D=fish",
+        "solver_answers": [
+            {
+                "A": "bird",
+                "B": "dog",
+                "C": "cat",
+                "D": "fish"
+            },
+            {
+                "A": "bird",
+                "B": "cat",
+                "C": "dog",
+                "D": "fish"
+            },
+            {
+                "A": "cat",
+                "B": "dog",
+                "C": "bird",
+                "D": "fish"
+            }
+        ],
+        "answer_counts": {
+            "{'a': 'bird', 'b': 'dog', 'c': 'cat', 'd': 'fish'}": 1,
+            "{'a': 'bird', 'b': 'cat', 'c': 'dog', 'd': 'fish'}": 1,
+            "{'a': 'cat', 'b': 'dog', 'c': 'bird', 'd': 'fish'}": 1
+        },
+        "majority_answer": {
+            "A": "bird",
+            "B": "dog",
+            "C": "cat",
+            "D": "fish"
+        },
+        "is_correct": false
+    },
+    {
+        "question_id": 16,
+        "question": "There are exactly three boxes: red, blue, and green. Exactly one contains gold. The labels are all wrong. The red box says 'gold is in the red box', the blue box says 'gold is in the red box', and the green box says 'gold is not in the blue box'. Which box contains the gold?",
+        "correct_answer": "Blue box",
+        "solver_answers": [
+            "blue",
+            "green",
+            "green"
+        ],
+        "answer_counts": {
+            "blue": 1,
+            "green": 2
+        },
+        "majority_answer": "green",
+        "is_correct": false
+    },
+    {
+        "question_id": 17,
+        "question": "Six books A, B, C, D, E, and F are arranged on a shelf. A must be before D. B must be immediately before C. E must be after D. F cannot be first. If B is in position 3, what is the only possible order?",
+        "correct_answer": "A D B C E F",
+        "solver_answers": [
+            "A, F, B, C, D, E",
+            "A, D, B, C, E, F",
+            "A, F, B, C, D, E"
+        ],
+        "answer_counts": {
+            "a, f, b, c, d, e": 2,
+            "a, d, b, c, e, f": 1
+        },
+        "majority_answer": "A, F, B, C, D, E",
+        "is_correct": false
+    },
+    {
+        "question_id": 18,
+        "question": "Exactly one of four statements is true: (1) A is true, (2) B is true, (3) A and B are both true, (4) A and B are both false. Which pair of truth values for A and B satisfies this condition?",
+        "correct_answer": "A=false, B=false",
+        "solver_answers": [
+            "A is false, B is false",
+            "(false, true)",
+            "A is false, B is false"
+        ],
+        "answer_counts": {
+            "a is false, b is false": 2,
+            "(false, true)": 1
+        },
+        "majority_answer": "A is false, B is false",
+        "is_correct": false
+    },
+    {
+        "question_id": 19,
+        "question": "A code consists of three distinct digits chosen from 1, 2, 3, 4, and 5. The first digit is smaller than the second, and the second digit is smaller than the third. How many valid codes are possible?",
+        "correct_answer": "10",
+        "solver_answers": [
+            "10",
+            "10",
+            "10"
+        ],
+        "answer_counts": {
+            "10": 3
+        },
+        "majority_answer": "10",
+        "is_correct": true
+    },
+    {
+        "question_id": 20,
+        "question": "Consider the Prisoner's Dilemma with payoffs (3,3) for mutual cooperation, (0,5) if player 1 cooperates and player 2 defects, (5,0) if player 1 defects and player 2 cooperates, and (1,1) for mutual defection. What is the unique pure-strategy Nash equilibrium?",
+        "correct_answer": "Both players defect",
+        "solver_answers": [
+            "(D,D)",
+            "(D,D)",
+            "(D, D)"
+        ],
+        "answer_counts": {
+            "(d,d)": 2,
+            "(d, d)": 1
+        },
+        "majority_answer": "(D,D)",
+        "is_correct": false
+    },
+    {
+        "question_id": 21,
+        "question": "In a zero-sum game, the row player's payoff matrix is [[2, -1], [-2, 3]]. Does the game have a pure-strategy saddle point? If so, give the saddle point and game value.",
+        "correct_answer": "No. There is no pure-strategy saddle point.",
+        "solver_answers": [
+            "No saddle point",
+            "No saddle point",
+            "No saddle point"
+        ],
+        "answer_counts": {
+            "no saddle point": 3
+        },
+        "majority_answer": "No saddle point",
+        "is_correct": false
+    },
+    {
+        "question_id": 22,
+        "question": "Two players simultaneously choose Left or Right. Player 1's payoff is 2 if their choices match and 0 otherwise. Player 2's payoff is 1 if their choices match and 0 otherwise. What are the pure-strategy Nash equilibria?",
+        "correct_answer": "(Left, Left) and (Right, Right)",
+        "solver_answers": [
+            "[ [\"Left\", \"Left\"], [\"Right\", \"Right\"] ]",
+            "[(L, L), (R, R)]",
+            "[\"(L, L)\", \"(R, R)\"]"
+        ],
+        "answer_counts": {
+            "[ [\"left\", \"left\"], [\"right\", \"right\"] ]": 1,
+            "[(l, l), (r, r)]": 1,
+            "[\"(l, l)\", \"(r, r)\"]": 1
+        },
+        "majority_answer": "[ [\"Left\", \"Left\"], [\"Right\", \"Right\"] ]",
+        "is_correct": false
+    },
+    {
+        "question_id": 23,
+        "question": "In the matching-pennies zero-sum game, Player 1 wins 1 if the two choices match and loses 1 otherwise. Player 2 receives the opposite payoff. What is the mixed-strategy Nash equilibrium?",
+        "correct_answer": "Both players choose Heads with probability 1/2 and Tails with probability 1/2.",
+        "solver_answers": [
+            "Player 1: p = 0.5, Player 2: q = 0.5",
+            "Player 1: (1/2, 1/2), Player 2: (1/2, 1/2)",
+            "(0.5, 0.5)"
+        ],
+        "answer_counts": {
+            "player 1: p = 0.5, player 2: q = 0.5": 1,
+            "player 1: (1/2, 1/2), player 2: (1/2, 1/2)": 1,
+            "(0.5, 0.5)": 1
+        },
+        "majority_answer": "Player 1: p = 0.5, Player 2: q = 0.5",
+        "is_correct": false
+    },
+    {
+        "question_id": 24,
+        "question": "Consider the payoff matrix for a zero-sum game: [[4, 0], [2, 3]]. Player 1 maximizes the payoff and Player 2 minimizes it. What is the value of the game if both players may use mixed strategies?",
+        "correct_answer": "12/5 = 2.4",
+        "solver_answers": [
+            "2.4",
+            "2",
+            "2"
+        ],
+        "answer_counts": {
+            "2.4": 1,
+            "2": 2
+        },
+        "majority_answer": "2",
+        "is_correct": false
+    },
+    {
+        "question_id": 25,
+        "question": "Two firms simultaneously choose High Price or Low Price. Their payoffs are: (High, High)=(4,4), (High, Low)=(1,6), (Low, High)=(6,1), and (Low, Low)=(2,2). What is the unique pure-strategy Nash equilibrium?",
+        "correct_answer": "Both choose Low Price",
+        "solver_answers": [
+            "(Low, Low)",
+            "(Low, Low)",
+            "(Low Price, Low Price)"
+        ],
+        "answer_counts": {
+            "(low, low)": 2,
+            "(low price, low price)": 1
+        },
+        "majority_answer": "(Low, Low)",
+        "is_correct": false
+    }
+]
